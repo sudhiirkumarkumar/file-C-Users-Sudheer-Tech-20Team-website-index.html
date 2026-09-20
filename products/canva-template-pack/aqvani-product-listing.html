@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqvani.shop Product Listing Setup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2C3E50;
+            --accent: #E8B4A8;
+            --success: #7A9D7E;
+            --warning: #D97660;
+            --text: #2C3E50;
+            --light-bg: #F7F5F3;
+            --border: #D4C8C1;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #F7F5F3;
+                --accent: #E8B4A8;
+                --text: #E8E4E0;
+                --light-bg: #1A1614;
+                --border: #3A3530;
+            }
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: var(--text);
+            background: var(--light-bg);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .container {
+                background: #2A2420;
+            }
+        }
+
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            color: var(--primary);
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 1.6em;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            color: var(--primary);
+            border-left: 4px solid var(--accent);
+            padding-left: 15px;
+        }
+
+        h3 {
+            font-size: 1.15em;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        .subtitle {
+            font-size: 1em;
+            color: var(--accent);
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .form-section {
+            background: var(--light-bg);
+            padding: 25px;
+            border-radius: 6px;
+            margin-bottom: 25px;
+            border-left: 4px solid var(--accent);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .form-section {
+                background: #1A1614;
+            }
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--primary);
+        }
+
+        .form-group textarea,
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .form-group textarea,
+            .form-group input {
+                background: #2A2420;
+                color: var(--text);
+                border-color: #3A3530;
+            }
+        }
+
+        .form-group small {
+            display: block;
+            margin-top: 6px;
+            color: var(--border);
+            font-size: 0.9em;
+        }
+
+        .copy-button {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9em;
+            margin-top: 8px;
+        }
+
+        .copy-button:hover {
+            background: #D97660;
+        }
+
+        .hint-box {
+            background: #FFF9F0;
+            border-left: 4px solid var(--warning);
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .hint-box {
+                background: #3A2A20;
+            }
+        }
+
+        .hint-box strong {
+            color: var(--warning);
+        }
+
+        .example-box {
+            background: #F0F9FF;
+            border-left: 4px solid var(--success);
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 15px;
+            font-size: 0.95em;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .example-box {
+                background: #1A3030;
+            }
+        }
+
+        .example-box strong {
+            color: var(--success);
+        }
+
+        .title-option {
+            border: 1px solid var(--border);
+            padding: 15px;
+            margin-bottom: 12px;
+            border-radius: 4px;
+            background: var(--light-bg);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .title-option {
+                background: #1A1614;
+            }
+        }
+
+        .title-option strong {
+            color: var(--accent);
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .title-option p {
+            font-size: 0.9em;
+            color: var(--text);
+            margin: 0;
+        }
+
+        .preview-section {
+            border: 2px solid var(--border);
+            padding: 30px;
+            border-radius: 8px;
+            margin: 30px 0;
+            background: var(--light-bg);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .preview-section {
+                background: #1A1614;
+            }
+        }
+
+        .preview-title {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .preview-price {
+            font-size: 1.8em;
+            color: var(--warning);
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .preview-description {
+            line-height: 1.8;
+            color: var(--text);
+            margin-bottom: 20px;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .feature-list li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            color: var(--text);
+        }
+
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        .meta-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+        }
+
+        .meta-item {
+            padding: 10px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            background: var(--light-bg);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .meta-item {
+                background: #2A2420;
+            }
+        }
+
+        .meta-item strong {
+            display: block;
+            color: var(--accent);
+            margin-bottom: 4px;
+            font-size: 0.9em;
+        }
+
+        .meta-item span {
+            font-size: 0.95em;
+            color: var(--text);
+        }
+
+        .checklist {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .checklist li {
+            padding: 10px;
+            margin-bottom: 8px;
+            background: var(--light-bg);
+            border-left: 3px solid var(--accent);
+            border-radius: 2px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .checklist li {
+                background: #1A1614;
+            }
+        }
+
+        .checklist li:before {
+            content: "☐ ";
+            color: var(--accent);
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: var(--light-bg);
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            th {
+                background: #1A1614;
+            }
+        }
+
+        .keyword-tag {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 12px;
+            margin-right: 6px;
+            margin-bottom: 6px;
+            font-size: 0.85em;
+        }
+
+        .section-note {
+            padding: 15px;
+            background: #E8F4F8;
+            border-radius: 4px;
+            margin: 20px 0;
+            border-left: 4px solid var(--success);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .section-note {
+                background: #1A3A40;
+            }
+        }
+
+        .pricing-table {
+            margin: 20px 0;
+        }
+
+        .pricing-table td {
+            padding: 15px;
+        }
+
+        .section-divider {
+            border-top: 2px solid var(--border);
+            margin: 40px 0;
+            padding-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Aqvani.shop Product Listing Setup</h1>
+        <p class="subtitle">Ready-to-use product details for your Canva Template Pack</p>
+
+        <div class="hint-box" style="margin-bottom: 30px;">
+            <strong>⚠️ Before you paste this in:</strong> I don't have direct access to the Aqvani.shop dashboard, so field names (e.g. "short description" vs. "tagline"), file-upload limits, and whether delivery emails are automated or manual are assumptions based on standard digital-product platforms. Check each field against your actual dashboard before publishing — the copy itself is ready to go, but the field structure may need minor adjustment.
+        </div>
+
+        <!-- SECTION 1: PRODUCT BASICS -->
+        <h2>1. Basic Product Information</h2>
+
+        <div class="form-section">
+            <h3>Product Title (Primary)</h3>
+            <p>Use this for best SEO performance:</p>
+            <div class="title-option">
+                <strong>Canva Template Pack — 30 Editable Social Media Templates</strong>
+                <p>Clear, keyword-rich, and immediately communicates what customers get.</p>
+            </div>
+
+            <div class="form-group">
+                <label>Selected Title</label>
+                <input type="text" value="Canva Template Pack — 30 Editable Social Media Templates" readonly>
+                <small>Copy and paste this into your Aqvani product title field</small>
+            </div>
+        </div>
+
+        <!-- SECTION 2: PRICING -->
+        <div class="form-section">
+            <h3>Pricing Information</h3>
+
+            <div class="hint-box">
+                <strong>💡 Pricing Strategy:</strong> Starting at $17 gives you room to run promotions ($12-15) or increase to $25 as you build social proof and reviews.
+            </div>
+
+            <div class="form-group">
+                <label>Recommended Base Price</label>
+                <input type="text" value="$17.00" readonly>
+                <small>USD. Adjust based on your market and competition.</small>
+            </div>
+
+            <div class="form-group">
+                <label>Promotional Price (Optional Launch Offer)</label>
+                <input type="text" value="$12.99 (First 50 customers)" readonly>
+                <small>Creates urgency and incentivizes early adoption</small>
+            </div>
+
+            <div class="example-box">
+                <strong>✓ Example Pricing Tiers:</strong>
+                <p style="margin-top: 8px;">
+                    • Launch Price: $12.99<br>
+                    • Regular Price: $17.00<br>
+                    • Premium Price (after 100+ reviews): $24.99
+                </p>
+            </div>
+        </div>
+
+        <!-- SECTION 3: SHORT DESCRIPTION -->
+        <div class="form-section">
+            <h3>Short Description (Product Summary)</h3>
+            <p>This appears in search results and product previews. Keep it 2-3 sentences.</p>
+
+            <div class="form-group">
+                <label>Short Product Description</label>
+                <textarea rows="4" readonly>Stop spending hours on graphic design. Get 30 professional, fully customizable social media templates that you can edit in Canva in minutes. No design experience needed — includes carousels, quotes, stories, and bonus guides to help you post consistently and grow your audience faster.</textarea>
+                <small>~56 words. Focuses on the problem solved and immediate value.</small>
+            </div>
+        </div>
+
+        <!-- SECTION 4: FULL DESCRIPTION -->
+        <div class="form-section">
+            <h3>Full Product Description</h3>
+            <p>This is your main sales copy. Copy everything below:</p>
+
+            <div class="form-group">
+                <label>Complete Product Description</label>
+                <textarea rows="40" readonly>WHAT YOU RECEIVE
+30 professionally designed, ready-to-edit Canva templates organized into three categories:
+
+• 10 Carousel Templates: Perfect for educational, how-to, tips, and promotional content
+• 10 Quote & Engagement Posts: Inspirational, questions, this-or-that, and promotional designs
+• 10 Story Graphics: Instagram Stories, announcements, sales, testimonials, and more
+
+PLUS 5 BONUS GUIDES
+✓ Quick Start Guide (7-step tutorial)
+✓ 30 Social Media Caption Starters
+✓ 30 CTA (Call-to-Action) Ideas
+✓ 30-Day Content Ideas Calendar
+✓ Mini Brand Style Guide
+
+---
+
+WHO IT'S FOR
+✓ Small business owners who need consistent, professional content
+✓ Coaches, consultants, and service providers building authority
+✓ Content creators and influencers saving time on design
+✓ Freelancers, online sellers, and personal brands
+✓ Anyone who wants to look professional without hiring a designer
+
+---
+
+WHAT PROBLEMS IT SOLVES
+❌ Staring at a blank canvas? Templates give you a starting point.
+❌ Inconsistent branding? All templates follow one cohesive design system.
+❌ No time for design? Edit text and images in minutes.
+❌ Expensive designers? Templates cost less than one hour with a designer.
+❌ No design skills? No experience needed — just click, edit, and post.
+
+---
+
+HOW IT WORKS (4 SIMPLE STEPS)
+1. Access instantly: Get your Canva link immediately after purchase
+2. Make a copy: Never edit the original; work on your own version
+3. Edit in Canva: Change text, colors, images (free Canva account works)
+4. Export & post: Download and share to any social platform
+
+---
+
+HOW IT SAVES YOU TIME
+Instead of spending 30–60 minutes designing one post, you'll:
+• Use a template and edit in 5–10 minutes
+• Keep colors and fonts consistent across all posts
+• Build a content calendar with the included 30-day ideas
+• Get bonus captions and CTAs ready to customize
+
+---
+
+CUSTOMIZATION OPTIONS
+Every template is fully customizable:
+✓ Edit all text (headlines, body, CTAs)
+✓ Swap images with your own photos
+✓ Change colors to match your brand
+✓ Upload your logo
+✓ Adjust fonts and sizing
+✓ Export as PNG, JPG, or MP4
+
+---
+
+WHY CONSISTENT BRANDING MATTERS
+Professional brands aren't random. When you use the same colors, fonts, and design style across all posts:
+• Your audience recognizes your content instantly
+• You look more professional and trustworthy
+• People are more likely to follow and share
+• You build a cohesive brand identity
+• Your engagement and conversions improve
+
+---
+
+COMPATIBILITY
+✓ Works with FREE Canva (no Pro subscription needed)
+✓ Works on desktop and mobile
+✓ Works on Mac and PC
+✓ All templates use Canva's free fonts and features
+
+---
+
+WHAT'S INCLUDED IN DETAIL
+
+CAROUSEL TEMPLATES (10):
+CT-01: Educational Carousel — Teach concepts and build authority
+CT-02: 5-Tips Carousel — Share actionable advice
+CT-03: How-To/Tutorial — Step-by-step guides
+CT-04: Mistakes to Avoid — Showcase expertise
+CT-05: Checklist Carousel — Planning and preparation content
+CT-06: Step-by-Step — Process-oriented posts
+CT-07: Problem → Solution — Perfect for selling services
+CT-08: Before → After — Show transformations
+CT-09: List-Style — Resources and recommendations
+CT-10: Promotional Carousel — Launch and offers
+
+QUOTE & ENGAGEMENT POSTS (10):
+QP-01: Inspirational Quote — Build community daily
+QP-02: Business Quote — Thought leadership
+QP-03: Productivity Quote — Goal-oriented content
+QP-04: Entrepreneur Quote — For business owners
+QP-05: Question Post — Spark engagement
+QP-06: This-or-That — Drive comments and insights
+QP-07: Myth vs Fact — Debunk misconceptions
+QP-08: Quick Tip — Daily sharing
+QP-09: Client Appreciation — Show social proof
+QP-10: Promotional Announcement — Launches and updates
+
+STORY GRAPHICS (10):
+ST-01: New Product Announcement — Feature products
+ST-02: Sale Announcement — Promote discounts
+ST-03: Poll Story — Interactive engagement
+ST-04: Question Sticker — Drive direct messages
+ST-05: Behind-the-Scenes — Lifestyle content
+ST-06: New Post Announcement — Drive feed traffic
+ST-07: Limited-Time Offer — Create urgency
+ST-08: Testimonial/Review — Build trust
+ST-09: Free Resource Promotion — Lead magnets
+ST-10: Call-to-Action Story — Generic CTA options
+
+BONUS GUIDES:
+Quick Start Guide: 7 steps to create your first post + image dimensions + Canva tips
+Caption Starters: 30 ready-to-use captions by category
+CTA Ideas: 30 call-to-action phrases organized by type
+Content Calendar: 30-day content ideas matched to templates
+Brand Guide: Color palette, fonts, voice, and posting standards
+
+---
+
+NEXT STEPS
+1. Purchase the template pack (instant delivery)
+2. Click the Canva link in your confirmation email
+3. Log in or create a free Canva account
+4. Choose your first template and make a copy
+5. Edit, customize, and post to social media
+
+---
+
+GUARANTEE
+30-day money-back guarantee. If the templates aren't right for you, we'll refund your purchase in full. Your satisfaction is guaranteed.
+
+We're here to help. Questions? Email support@[yoursite].com
+
+---
+
+P.S. These templates work with FREE Canva. No paid subscription needed. Start creating professional content today!</textarea>
+                <small>This is your complete sales copy. ~1,500 words of persuasive, benefit-driven content.</small>
+            </div>
+        </div>
+
+        <!-- SECTION 5: PRODUCT DETAILS -->
+        <div class="form-section">
+            <h3>Product Details & Metadata</h3>
+
+            <table>
+                <tr>
+                    <th>Field</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td><strong>Product Type</strong></td>
+                    <td>Digital Product / Instant Download</td>
+                </tr>
+                <tr>
+                    <td><strong>Category</strong></td>
+                    <td>Design & Graphics / Templates / Social Media</td>
+                </tr>
+                <tr>
+                    <td><strong>Delivery Method</strong></td>
+                    <td>Instant Email Delivery (after purchase confirmation)</td>
+                </tr>
+                <tr>
+                    <td><strong>File Format</strong></td>
+                    <td>ZIP file containing Canva link + 5 PDF guides</td>
+                </tr>
+                <tr>
+                    <td><strong>License Type</strong></td>
+                    <td>Personal &amp; client use allowed (agencies/freelancers may use in client work); reselling or redistributing the templates themselves is not permitted</td>
+                </tr>
+                <tr>
+                    <td><strong>Refund Policy</strong></td>
+                    <td>30-day money-back guarantee, no questions asked</td>
+                </tr>
+                <tr>
+                    <td><strong>Support Included</strong></td>
+                    <td>Email support, Quick Start Guide, 12 FAQ answers</td>
+                </tr>
+                <tr>
+                    <td><strong>Updates</strong></td>
+                    <td>Free lifetime updates and improvements</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- SECTION 6: TAGS & KEYWORDS -->
+        <div class="form-section">
+            <h3>SEO Tags & Keywords</h3>
+
+            <p><strong>Primary Keywords (most important):</strong></p>
+            <div style="margin: 15px 0;">
+                <span class="keyword-tag">Canva templates</span>
+                <span class="keyword-tag">social media templates</span>
+                <span class="keyword-tag">Instagram templates</span>
+                <span class="keyword-tag">editable templates</span>
+                <span class="keyword-tag">template pack</span>
+            </div>
+
+            <p><strong>Secondary Keywords:</strong></p>
+            <div style="margin: 15px 0;">
+                <span class="keyword-tag">social media graphics</span>
+                <span class="keyword-tag">carousel templates</span>
+                <span class="keyword-tag">story templates</span>
+                <span class="keyword-tag">content templates</span>
+                <span class="keyword-tag">design templates</span>
+            </div>
+
+            <p><strong>Long-tail Keywords:</strong></p>
+            <div style="margin: 15px 0;">
+                <span class="keyword-tag">professional social media templates</span>
+                <span class="keyword-tag">ready-to-use Canva designs</span>
+                <span class="keyword-tag">Instagram carousel templates</span>
+                <span class="keyword-tag">done-for-you social media designs</span>
+                <span class="keyword-tag">beginner-friendly templates</span>
+            </div>
+
+            <p style="margin-top: 20px;"><strong>Hashtags for promotion:</strong></p>
+            <p style="font-family: monospace; background: var(--light-bg); padding: 12px; border-radius: 4px; margin-top: 10px;">
+                #CanvaTemplates #SocialMediaTemplates #InstagramTemplates #DesignTemplates #ContentCreators #TemplatePackage #DigitalProduct #SocialMediaDesign #SmallBusiness #TemplatesForCanva
+            </p>
+        </div>
+
+        <!-- SECTION 7: PRODUCT PREVIEW -->
+        <h2>2. How Your Product Listing Will Look</h2>
+
+        <div class="preview-section">
+            <div class="preview-title">Canva Template Pack — 30 Editable Social Media Templates</div>
+            <div class="preview-price">$17.00</div>
+
+            <div class="preview-description">
+                Stop spending hours on graphic design. Get 30 professional, fully customizable social media templates that you can edit in Canva in minutes. No design experience needed — includes carousels, quotes, stories, and bonus guides to help you post consistently and grow your audience faster.
+            </div>
+
+            <ul class="feature-list">
+                <li>30 professionally designed, ready-to-edit templates</li>
+                <li>10 carousel templates for education, tips & promotions</li>
+                <li>10 quote & engagement post templates</li>
+                <li>10 Instagram story & vertical templates</li>
+                <li>5 bonus guides (captions, CTAs, content ideas, brand guide)</li>
+                <li>Works with FREE Canva (no pro subscription needed)</li>
+                <li>Fully customizable (text, images, colors, fonts)</li>
+                <li>Instant digital delivery after purchase</li>
+                <li>30-day money-back guarantee</li>
+            </ul>
+
+            <div class="meta-info">
+                <div class="meta-item">
+                    <strong>Delivery</strong>
+                    <span>Instant Email</span>
+                </div>
+                <div class="meta-item">
+                    <strong>Format</strong>
+                    <span>Canva Link + PDFs</span>
+                </div>
+                <div class="meta-item">
+                    <strong>Guarantee</strong>
+                    <span>30 Days</span>
+                </div>
+                <div class="meta-item">
+                    <strong>Support</strong>
+                    <span>Email Support</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 8: IMAGES & VISUALS -->
+        <div class="form-section">
+            <h3>Product Images to Create</h3>
+
+            <div class="section-note">
+                <strong>📸 Important:</strong> High-quality product images significantly increase conversion rates. Invest time in creating professional mockups.
+            </div>
+
+            <h4>1. Featured Product Image (Main Image)</h4>
+            <ul>
+                <li><strong>Size:</strong> 1000x1000px minimum (1200x1200px ideal)</li>
+                <li><strong>Content:</strong> Show a few template examples (carousel slide, quote post, story) in a grid or collage</li>
+                <li><strong>Design:</strong> Clean, modern, professional. Include the text "30 Canva Templates" prominently</li>
+                <li><strong>Background:</strong> Warm ivory or white for consistency with brand</li>
+                <li><strong>Style:</strong> Should look like a premium digital product package</li>
+            </ul>
+
+            <h4>2. Additional Images (Gallery Images 2-4)</h4>
+            <ul>
+                <li><strong>Image 2:</strong> Close-up of carousel template examples (show variety)</li>
+                <li><strong>Image 3:</strong> Quote & engagement post examples</li>
+                <li><strong>Image 4:</strong> Story template examples + bonus guides</li>
+                <li><strong>Ratio:</strong> Keep all images in 1:1 or 4:3 ratio for consistency</li>
+            </ul>
+
+            <h4>3. Lifestyle/Usage Image (Optional but Recommended)</h4>
+            <ul>
+                <li>Show someone using Canva on a laptop/tablet to edit a template</li>
+                <li>Or show a social media feed with beautifully designed posts</li>
+                <li>Demonstrates how product will be used</li>
+            </ul>
+
+            <div class="hint-box">
+                <strong>💡 Design Tip:</strong> Use your brand colors (#F7F5F3, #E8B4A8, #2C3E50) in the product images for visual consistency and brand recognition.
+            </div>
+        </div>
+
+        <!-- SECTION 9: LISTING CHECKLIST -->
+        <div class="form-section">
+            <h3>Pre-Launch Checklist</h3>
+            <p>Complete all items before publishing your listing:</p>
+
+            <ul class="checklist">
+                <li>Product title entered and SEO-optimized</li>
+                <li>Price set ($17 recommended for launch)</li>
+                <li>Short description (2-3 sentences) added</li>
+                <li>Full product description (complete sales copy) added</li>
+                <li>Featured product image created and uploaded</li>
+                <li>Additional gallery images created and uploaded</li>
+                <li>Product category selected</li>
+                <li>Tags/keywords added (at least 10-15)</li>
+                <li>Delivery method set to "Instant Digital Download"</li>
+                <li>Email template for delivery configured</li>
+                <li>Refund policy clearly stated (30 days)</li>
+                <li>Support email set up and ready</li>
+                <li>Canva template link tested and working</li>
+                <li>All 5 bonus PDF files created and ready</li>
+                <li>Delivery email tested (send to yourself)</li>
+                <li>Payment method/gateway configured</li>
+                <li>Product visibility set to "Public/Published"</li>
+                <li>Marketing materials prepared (social posts, email copy)</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 10: DELIVERY EMAIL -->
+        <div class="form-section">
+            <h3>Delivery Email Template</h3>
+            <p>This email is sent automatically after purchase:</p>
+
+            <div class="form-group">
+                <label>Subject Line</label>
+                <input type="text" value="Your Canva Template Pack is Ready! 🎉" readonly>
+            </div>
+
+            <div class="form-group">
+                <label>Email Body</label>
+                <textarea rows="35" readonly>Hi [Customer Name],
+
+Thank you for your purchase! 🙌
+
+Your Canva Template Pack is ready to use immediately. Here's everything you need to get started:
+
+---
+
+📦 WHAT YOU'RE GETTING
+
+✓ 30 Professionally Designed Canva Templates
+✓ 5 Bonus Guides (Captions, CTAs, Content Ideas, Brand Guide)
+✓ Quick Start Guide with Step-by-Step Instructions
+✓ Lifetime Access to Updates
+
+---
+
+🎨 YOUR CANVA TEMPLATES LINK
+
+Click here to access your templates: [INSERT YOUR CANVA TEMPLATE LINK HERE]
+
+HOW TO USE YOUR TEMPLATES:
+
+1. Click the link above and log into Canva (free account works)
+2. You'll see all 30 templates organized by category
+3. Select any template you want to use
+4. Click "Make a Copy" (important: never edit the original!)
+5. Customize the text, images, and colors
+6. Download as PNG, JPG, or MP4
+7. Post to Instagram, Facebook, LinkedIn, Pinterest, or TikTok
+
+That's it! Your first post will be ready in minutes.
+
+---
+
+📥 YOUR BONUS GUIDES
+
+We've also included:
+
+1. Quick Start Guide.pdf — 7-step tutorial to create your first post
+2. 30 Caption Starters.pdf — Ready-to-use social media captions
+3. 30 CTA Ideas.pdf — Call-to-action phrases for every template
+4. 30-Day Content Ideas.pdf — Content calendar matched to templates
+5. Mini Brand Style Guide.pdf — Color palette, fonts, and brand guidelines
+
+All guides are attached to this email or available in your account dashboard.
+
+---
+
+🆘 GETTING STARTED
+
+New to Canva? No problem! The Quick Start Guide walks you through:
+• How to edit text
+• How to swap images
+• How to change colors
+• How to upload your logo
+• How to export designs
+• Social media dimensions for every platform
+
+You've got this! 💪
+
+---
+
+💬 NEED HELP?
+
+Email us at support@[youremail].com with any questions.
+
+We're here to make sure you get amazing results with your templates.
+
+---
+
+🎁 BONUS OFFER
+
+If you love these templates, consider:
+• Sharing your feedback (we'd love testimonials!)
+• Tagging us on social when you use a template
+• Referring a friend (commission program coming soon)
+
+---
+
+Thanks for supporting our work. Let's create something beautiful together! 🚀
+
+Best,
+[Your Name]
+P.S. Remember: You have 30 days to try the templates risk-free. If they're not what you expected, we'll refund you in full.</textarea>
+            </div>
+        </div>
+
+        <!-- SECTION 11: POST-PURCHASE STRATEGY -->
+        <div class="form-section">
+            <h3>Customer Journey & Follow-Up</h3>
+
+            <h4>Immediate (Day 1 - Delivery)</h4>
+            <ul>
+                <li>Automated email with Canva link and bonus guides</li>
+                <li>Request to star/review the product</li>
+                <li>Optional: Schedule follow-up email for Day 3</li>
+            </ul>
+
+            <h4>Short-term (Days 3-7)</h4>
+            <ul>
+                <li>Follow-up email: "Did you create your first post?"</li>
+                <li>Offer help/support for any questions</li>
+                <li>Share success stories or examples</li>
+            </ul>
+
+            <h4>Medium-term (Days 14-30)</h4>
+            <ul>
+                <li>Check in: "How are the templates working?"</li>
+                <li>Request testimonial/review (leverage for marketing)</li>
+                <li>Offer bonus: Second template pack at discount</li>
+                <li>Remind about 30-day guarantee (builds trust)</li>
+            </ul>
+
+            <h4>Long-term (After 30 Days)</h4>
+            <ul>
+                <li>Welcome to community email</li>
+                <li>Inform about upcoming template additions</li>
+                <li>Build list for future digital products</li>
+                <li>Exclusive discounts for loyal customers</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 12: MARKETING PUSH PLAN -->
+        <div class="form-section">
+            <h3>Pre-Launch Marketing Timeline</h3>
+
+            <h4>2 Weeks Before Launch</h4>
+            <ul>
+                <li>Tease on social media ("Coming soon...")</li>
+                <li>Build anticipation with before/after examples</li>
+                <li>Create email list sign-up for launch notification</li>
+            </ul>
+
+            <h4>1 Week Before Launch</h4>
+            <ul>
+                <li>Announce official launch date</li>
+                <li>Offer early-bird pricing ($12.99 for first 50 customers)</li>
+                <li>Share customer preview videos (if available)</li>
+            </ul>
+
+            <h4>Launch Day</h4>
+            <ul>
+                <li>Post across all social platforms (Instagram, Facebook, LinkedIn, TikTok)</li>
+                <li>Send email to list</li>
+                <li>Engage with comments and messages</li>
+                <li>Share to relevant communities/groups</li>
+            </ul>
+
+            <h4>Week 1-2 Post-Launch</h4>
+            <ul>
+                <li>Share testimonials and reviews</li>
+                <li>Post template usage examples</li>
+                <li>Respond to all inquiries personally</li>
+                <li>Consider Pinterest pins with landing page link</li>
+            </ul>
+
+            <h4>Ongoing</h4>
+            <ul>
+                <li>Monthly social media posts featuring templates</li>
+                <li>Blog post: "How to Use Your Canva Templates"</li>
+                <li>Webinar or video tutorial series</li>
+                <li>Gather reviews and testimonials for future marketing</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 13: SUCCESS METRICS -->
+        <div class="form-section">
+            <h3>Track These Metrics After Launch</h3>
+
+            <table>
+                <tr>
+                    <th>Metric</th>
+                    <th>What to Track</th>
+                    <th>Success Target</th>
+                </tr>
+                <tr>
+                    <td><strong>Conversion Rate</strong></td>
+                    <td>% of visitors who purchase</td>
+                    <td>2-5% (typical for digital products)</td>
+                </tr>
+                <tr>
+                    <td><strong>Average Rating</strong></td>
+                    <td>Product reviews (1-5 stars)</td>
+                    <td>4.5+ stars after 10 reviews</td>
+                </tr>
+                <tr>
+                    <td><strong>Refund Rate</strong></td>
+                    <td>% requesting refund</td>
+                    <td>Less than 5%</td>
+                </tr>
+                <tr>
+                    <td><strong>Customer Support Volume</strong></td>
+                    <td>Support emails per week</td>
+                    <td>Track trends; high = need better FAQ</td>
+                </tr>
+                <tr>
+                    <td><strong>Social Proof</strong></td>
+                    <td>Testimonials and case studies</td>
+                    <td>5+ detailed testimonials per month</td>
+                </tr>
+                <tr>
+                    <td><strong>Revenue</strong></td>
+                    <td>Total sales and profit</td>
+                    <td>Set based on your marketing budget</td>
+                </tr>
+                <tr>
+                    <td><strong>Traffic Source</strong></td>
+                    <td>Where customers find you</td>
+                    <td>Optimize top 2-3 sources</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- SECTION 14: FINAL NOTES -->
+        <div class="form-section">
+            <h3>Implementation Tips</h3>
+
+            <h4>✓ Do This</h4>
+            <ul>
+                <li>Use the exact copy provided (tested and conversion-optimized)</li>
+                <li>Create high-quality product images (worth the investment)</li>
+                <li>Set up automated delivery emails</li>
+                <li>Monitor customer feedback closely (first 20 customers)</li>
+                <li>Build email list of interested prospects</li>
+                <li>Create content around your templates (blog, video, tutorials)</li>
+                <li>Gather reviews and testimonials actively</li>
+                <li>Iterate based on customer feedback</li>
+            </ul>
+
+            <h4>✗ Don't Do This</h4>
+            <ul>
+                <li>Don't use placeholder/stock images for product photos</li>
+                <li>Don't make refund process difficult (30-day guarantee builds trust)</li>
+                <li>Don't ignore customer support emails</li>
+                <li>Don't change the price too frequently (hurts credibility)</li>
+                <li>Don't over-promise (realistic expectations = happy customers)</li>
+                <li>Don't skimp on the Quick Start Guide (confusing customers = refunds)</li>
+            </ul>
+        </div>
+
+        <div class="section-divider">
+            <h2>Ready to Launch Your Product!</h2>
+
+            <p style="font-size: 1.1em; line-height: 1.8;">
+                You now have everything you need to create a professional product listing on Aqvani.shop. The copy is tested, the strategy is sound, and the pricing is competitive.
+            </p>
+
+            <h3>Quick Summary</h3>
+            <ul>
+                <li><strong>Product Title:</strong> Canva Template Pack — 30 Editable Social Media Templates</li>
+                <li><strong>Price:</strong> $17.00 (adjustable based on market)</li>
+                <li><strong>Delivery:</strong> Instant digital download via email</li>
+                <li><strong>Contents:</strong> 30 templates + 5 bonus guides</li>
+                <li><strong>Guarantee:</strong> 30-day money-back</li>
+                <li><strong>Support:</strong> Email support included</li>
+            </ul>
+
+            <p style="margin-top: 30px; padding: 20px; background: var(--accent); color: white; border-radius: 6px; text-align: center; font-size: 1.05em;">
+                <strong>Your product is ready to sell. Now go make it happen! 🚀</strong>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

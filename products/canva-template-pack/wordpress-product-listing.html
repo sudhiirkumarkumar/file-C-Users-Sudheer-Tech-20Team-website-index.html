@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordPress Product Listing - Canva Template Pack</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2C3E50;
+            border-bottom: 3px solid #E8B4A8;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+        }
+
+        h2 {
+            color: #2C3E50;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.6em;
+            border-left: 4px solid #E8B4A8;
+            padding-left: 15px;
+        }
+
+        h3 {
+            color: #D97660;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .subsection {
+            background: #f9f9f9;
+            border-left: 3px solid #E8DDD3;
+            padding: 20px;
+            margin: 15px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+        }
+
+        table th {
+            background: #2C3E50;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        table td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table tr:hover {
+            background: #f5f5f5;
+        }
+
+        .code-block {
+            background: #2C3E50;
+            color: #E8DDD3;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+
+        .checklist {
+            list-style: none;
+            margin: 15px 0;
+        }
+
+        .checklist li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .checklist li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #D97660;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .warning {
+            background: #FFF3CD;
+            border-left: 4px solid #FFC107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 3px;
+        }
+
+        .tip {
+            background: #D4EDDA;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 3px;
+        }
+
+        .feature-box {
+            background: #E8DDD3;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #E8B4A8;
+        }
+
+        .step {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border-left: 4px solid #E8B4A8;
+        }
+
+        .step-number {
+            display: inline-block;
+            background: #D97660;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: #D97660;
+        }
+
+        .required {
+            color: #D97660;
+            font-weight: bold;
+        }
+
+        .optional {
+            color: #B5A39F;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WordPress Product Listing Setup</h1>
+        <p><strong>Canva Template Pack - Digital Product</strong></p>
+        <p style="color: #666; margin-bottom: 30px;">Complete guide for uploading and configuring your premium digital product on WordPress with WooCommerce or custom post types.</p>
+
+        <!-- ===== 1. WORDPRESS INSTALLATION & PLUGINS ===== -->
+        <div class="section">
+            <h2>1. WordPress Installation & Required Plugins</h2>
+
+            <h3>Required Plugins</h3>
+            <div class="subsection">
+                <table>
+                    <tr>
+                        <th>Plugin</th>
+                        <th>Purpose</th>
+                        <th>Priority</th>
+                    </tr>
+                    <tr>
+                        <td><strong>WooCommerce</strong></td>
+                        <td>E-commerce platform for digital products, payments, inventory</td>
+                        <td class="required">Essential</td>
+                    </tr>
+                    <tr>
+                        <td><strong>WooCommerce PDF Invoice</strong></td>
+                        <td>Generate PDF receipts for customers</td>
+                        <td class="optional">Recommended</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Yoast SEO</strong></td>
+                        <td>SEO optimization, meta tags, XML sitemaps</td>
+                        <td class="optional">Recommended</td>
+                    </tr>
+                    <tr>
+                        <td><strong>WP Mail SMTP</strong></td>
+                        <td>Reliable email delivery for order confirmations</td>
+                        <td class="optional">Recommended</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Elementor Pro</strong> (optional)</td>
+                        <td>Advanced page builder for product pages</td>
+                        <td class="optional">Optional</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>Installation Steps</h3>
+            <ol>
+                <li>Install and activate <strong>WooCommerce</strong> plugin from WordPress.org</li>
+                <li>Complete WooCommerce setup wizard:
+                    <ul>
+                        <li>Store location (your country)</li>
+                        <li>Industry: Digital Products</li>
+                        <li>Products sold: Less than 10,000</li>
+                        <li>Business features: Payment processing</li>
+                    </ul>
+                </li>
+                <li>Configure payment methods (Stripe, PayPal)</li>
+                <li>Set up tax settings (digital goods typically have no tax)</li>
+            </ol>
+        </div>
+
+        <!-- ===== 2. PRODUCT CONFIGURATION ===== -->
+        <div class="section">
+            <h2>2. Product Configuration in WordPress</h2>
+
+            <h3>Create New Product</h3>
+            <div class="step">
+                <p>Navigate: <strong>WooCommerce → Products → Add New</strong></p>
+            </div>
+
+            <h3>Essential Product Fields</h3>
+            <table>
+                <tr>
+                    <th>Field</th>
+                    <th>Value/Format</th>
+                    <th>Example</th>
+                </tr>
+                <tr>
+                    <td><strong>Product Title</strong></td>
+                    <td class="required">Required</td>
+                    <td>30 Canva Templates - Social Media Bundle</td>
+                </tr>
+                <tr>
+                    <td><strong>Product Description</strong></td>
+                    <td class="required">Required (Long)</td>
+                    <td>Full product description with features</td>
+                </tr>
+                <tr>
+                    <td><strong>Short Description</strong></td>
+                    <td class="required">Required (1-2 sentences)</td>
+                    <td>30 done-for-you Canva templates...</td>
+                </tr>
+                <tr>
+                    <td><strong>Product Type</strong></td>
+                    <td class="required">Required</td>
+                    <td>Simple Product</td>
+                </tr>
+                <tr>
+                    <td><strong>Virtual Product</strong></td>
+                    <td class="required">Checked</td>
+                    <td>YES (digital product)</td>
+                </tr>
+                <tr>
+                    <td><strong>Downloadable</strong></td>
+                    <td class="required">Checked</td>
+                    <td>YES (allows file delivery)</td>
+                </tr>
+                <tr>
+                    <td><strong>Download Limit</strong></td>
+                    <td>Optional</td>
+                    <td>Unlimited or 10 downloads</td>
+                </tr>
+                <tr>
+                    <td><strong>Download Expiry</strong></td>
+                    <td>Optional</td>
+                    <td>365 days (1 year)</td>
+                </tr>
+            </table>
+
+            <h3>Pricing & Licensing</h3>
+            <div class="subsection">
+                <table>
+                    <tr>
+                        <th>Setting</th>
+                        <th>Value</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Regular Price</strong></td>
+                        <td>$17.00 (or your chosen price)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sale Price</strong></td>
+                        <td>$9.00 (optional - for promotions)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Stock Quantity</strong></td>
+                        <td>Unlimited (digital product)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tax Status</strong></td>
+                        <td>Taxable or Non-taxable (check local laws)</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- ===== 3. PRODUCT CATEGORIES & TAGS ===== -->
+        <div class="section">
+            <h2>3. Product Categories & Tags</h2>
+
+            <h3>Recommended Categories</h3>
+            <div class="feature-box">
+                <ul>
+                    <li>Digital Products</li>
+                    <li>Design Templates</li>
+                    <li>Canva Templates</li>
+                    <li>Social Media Templates</li>
+                    <li>Business Templates</li>
+                </ul>
+            </div>
+
+            <h3>Recommended Tags</h3>
+            <div class="feature-box">
+                <ul>
+                    <li>canva</li>
+                    <li>templates</li>
+                    <li>social-media</li>
+                    <li>instagram</li>
+                    <li>facebook</li>
+                    <li>pinterest</li>
+                    <li>linkedin</li>
+                    <li>content-creator</li>
+                    <li>small-business</li>
+                    <li>marketing-templates</li>
+                    <li>carousel-template</li>
+                    <li>quote-post</li>
+                    <li>story-template</li>
+                </ul>
+            </div>
+
+            <div class="tip">
+                <strong>Tip:</strong> Use specific, searchable tags. Customers searching for "instagram templates canva" should find your product.
+            </div>
+        </div>
+
+        <!-- ===== 4. PRODUCT IMAGES & GALLERY ===== -->
+        <div class="section">
+            <h2>4. Product Images & Gallery</h2>
+
+            <h3>Featured Image Specifications</h3>
+            <table>
+                <tr>
+                    <th>Specification</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td><strong>Dimensions</strong></td>
+                    <td>1200 x 1200 px (minimum)</td>
+                </tr>
+                <tr>
+                    <td><strong>File Format</strong></td>
+                    <td>JPEG or PNG</td>
+                </tr>
+                <tr>
+                    <td><strong>File Size</strong></td>
+                    <td>Under 500 KB (for fast loading)</td>
+                </tr>
+                <tr>
+                    <td><strong>Content</strong></td>
+                    <td>Product mockup or hero image</td>
+                </tr>
+            </table>
+
+            <h3>Product Gallery Images</h3>
+            <div class="subsection">
+                <ol>
+                    <li><strong>Hero/Mockup Image</strong> - Main product preview (1200x1200)</li>
+                    <li><strong>Template Preview 1</strong> - Carousel template example (1200x800)</li>
+                    <li><strong>Template Preview 2</strong> - Quote post example (1200x800)</li>
+                    <li><strong>Template Preview 3</strong> - Story template example (1080x1920)</li>
+                    <li><strong>Design System</strong> - Color palette & typography (1200x800)</li>
+                    <li><strong>Bonus Content</strong> - Show included guides (1200x600)</li>
+                </ol>
+            </div>
+
+            <div class="warning">
+                <strong>Important:</strong> Use high-quality images. Poor product images reduce conversions by 40-50%. Show actual template examples, not just stock photos.
+            </div>
+        </div>
+
+        <!-- ===== 5. DIGITAL DELIVERY SETUP ===== -->
+        <div class="section">
+            <h2>5. Digital File Delivery Setup</h2>
+
+            <h3>File Organization</h3>
+            <div class="subsection">
+                <p><strong>Directory Structure:</strong></p>
+                <div class="code-block">
+/canva-templates-pack/
+├── 01-Quick-Start-Guide.pdf
+├── 02-Design-System-Guide.pdf
+├── 03-How-to-Edit-Templates.pdf
+├── Templates/
+│   ├── Carousels/ (CT-01 through CT-10)
+│   ├── Quote-Posts/ (QP-01 through QP-10)
+│   └── Stories/ (ST-01 through ST-10)
+├── Bonus-Content/
+│   ├── Instagram-Captions-List.pdf
+│   ├── CTA-Ideas.pdf
+│   ├── Content-Calendar-30-Days.pdf
+│   └── Brand-Guide.pdf
+└── Installation-Instructions.txt
+                </div>
+            </div>
+
+            <h3>File Upload to WordPress</h3>
+            <div class="step">
+                <span class="step-number">1</span>
+                <strong>Create a file</strong>
+                <p>ZIP all files into: <code>Canva-Templates-Pack.zip</code></p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">2</span>
+                <strong>Upload to WooCommerce</strong>
+                <p>In product editor, scroll to <strong>"Downloadable files"</strong> section</p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">3</span>
+                <strong>Add file</strong>
+                <p>Click "Add file" → Upload ZIP → Give it a name: <code>Canva-Templates-Pack</code></p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">4</span>
+                <strong>Set download limits</strong>
+                <p>Download Limit: Unlimited (or 10 for protection)</p>
+                <p>Download Expiry: 365 days (1 year access)</p>
+            </div>
+
+            <h3>Email Delivery Configuration</h3>
+            <div class="subsection">
+                <p><strong>WooCommerce Settings → Emails</strong></p>
+                <table>
+                    <tr>
+                        <th>Setting</th>
+                        <th>Configuration</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Completed Order Email</strong></td>
+                        <td>Enable - includes download link</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Processing Order Email</strong></td>
+                        <td>Enable - immediate confirmation</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Failed Order Email</strong></td>
+                        <td>Enable - payment issue notification</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="tip">
+                <strong>Pro Tip:</strong> Create custom email templates with your branding. Use WP Mail SMTP for better deliverability to spam folders.
+            </div>
+        </div>
+
+        <!-- ===== 6. SEO CONFIGURATION ===== -->
+        <div class="section">
+            <h2>6. SEO Configuration</h2>
+
+            <h3>Basic SEO Fields (Yoast SEO)</h3>
+            <table>
+                <tr>
+                    <th>Field</th>
+                    <th>Value</th>
+                    <th>Notes</th>
+                </tr>
+                <tr>
+                    <td><strong>Focus Keyword</strong></td>
+                    <td>canva social media templates</td>
+                    <td>Primary keyword (1-2 words)</td>
+                </tr>
+                <tr>
+                    <td><strong>Meta Description</strong></td>
+                    <td>30 done-for-you Canva templates for Instagram, Facebook, LinkedIn. Carousels, quote posts, stories. 30-day guarantee. [159 chars]</td>
+                    <td>Max 160 characters</td>
+                </tr>
+                <tr>
+                    <td><strong>Slug</strong></td>
+                    <td>canva-social-media-template-pack</td>
+                    <td>URL-friendly name</td>
+                </tr>
+                <tr>
+                    <td><strong>Readability</strong></td>
+                    <td>Green score</td>
+                    <td>Aim for 70+ readability score</td>
+                </tr>
+            </table>
+
+            <h3>Secondary Keywords</h3>
+            <div class="feature-box">
+                <p><strong>Include these phrases naturally in content:</strong></p>
+                <ul>
+                    <li>Instagram carousel templates</li>
+                    <li>Canva template pack</li>
+                    <li>Social media design templates</li>
+                    <li>Small business Canva templates</li>
+                    <li>Quote post templates</li>
+                    <li>Story templates for creators</li>
+                </ul>
+            </div>
+
+            <h3>Schema Markup</h3>
+            <div class="subsection">
+                <p><strong>Yoast SEO automatically adds:</strong></p>
+                <ul>
+                    <li>Product schema (price, availability)</li>
+                    <li>Aggregate rating schema (if you have reviews)</li>
+                    <li>Breadcrumb schema</li>
+                </ul>
+                <p><strong>Add manually (if needed):</strong></p>
+                <div class="code-block">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "30 Canva Templates - Social Media Bundle",
+  "image": "https://yoursite.com/image.jpg",
+  "description": "Done-for-you templates...",
+  "brand": { "@type": "Brand", "name": "Your Brand" },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://yoursite.com/product/",
+    "priceCurrency": "USD",
+    "price": "17.00",
+    "availability": "https://schema.org/InStock"
+  }
+}
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== 7. PRODUCT DESCRIPTION SETUP ===== -->
+        <div class="section">
+            <h2>7. Product Description Setup</h2>
+
+            <h3>Short Description</h3>
+            <div class="subsection">
+                <p><strong>1-2 sentences, appears above "Add to Cart" button:</strong></p>
+                <p>"30 done-for-you Canva templates built on a single cohesive design system. Instagram carousels, quote posts, and stories—plus bonus guides and content ideas. Works with free Canva."</p>
+            </div>
+
+            <h3>Full Description Structure</h3>
+            <table>
+                <tr>
+                    <th>Section</th>
+                    <th>Word Count</th>
+                    <th>Purpose</th>
+                </tr>
+                <tr>
+                    <td><strong>Hook/Problem</strong></td>
+                    <td>50-75 words</td>
+                    <td>Identify customer pain point</td>
+                </tr>
+                <tr>
+                    <td><strong>Solution/Benefits</strong></td>
+                    <td>100-150 words</td>
+                    <td>How templates solve the problem</td>
+                </tr>
+                <tr>
+                    <td><strong>What's Included</strong></td>
+                    <td>100-200 words</td>
+                    <td>List all 30 templates with categories</td>
+                </tr>
+                <tr>
+                    <td><strong>Features/Design System</strong></td>
+                    <td>75-100 words</td>
+                    <td>Color palette, typography, consistency</td>
+                </tr>
+                <tr>
+                    <td><strong>How to Use</strong></td>
+                    <td>75-100 words</td>
+                    <td>Step-by-step editing instructions</td>
+                </tr>
+                <tr>
+                    <td><strong>Bonus Content</strong></td>
+                    <td>50-75 words</td>
+                    <td>Guides, captions, CTAs included</td>
+                </tr>
+                <tr>
+                    <td><strong>Who It's For</strong></td>
+                    <td>50-75 words</td>
+                    <td>Target customer types</td>
+                </tr>
+                <tr>
+                    <td><strong>Guarantee</strong></td>
+                    <td>25-50 words</td>
+                    <td>Money-back guarantee terms</td>
+                </tr>
+            </table>
+
+            <h3>HTML Formatting Tips</h3>
+            <div class="feature-box">
+                <ul>
+                    <li>Use <code>&lt;h3&gt;</code> for section headings</li>
+                    <li>Use <code>&lt;ul&gt;</code> for bullet lists</li>
+                    <li>Use <code>&lt;strong&gt;</code> for emphasis</li>
+                    <li>Add spaces between sections</li>
+                    <li>Keep paragraphs short (3-5 lines max)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ===== 8. CUSTOM FIELDS & METADATA ===== -->
+        <div class="section">
+            <h2>8. Custom Fields & Metadata</h2>
+
+            <h3>WooCommerce Custom Fields</h3>
+            <table>
+                <tr>
+                    <th>Field Name</th>
+                    <th>Value</th>
+                    <th>Purpose</th>
+                </tr>
+                <tr>
+                    <td><strong>_license_type</strong></td>
+                    <td>personal_and_client_use</td>
+                    <td>Show license in product page</td>
+                </tr>
+                <tr>
+                    <td><strong>_file_format</strong></td>
+                    <td>Canva Online Editor</td>
+                    <td>What software is needed</td>
+                </tr>
+                <tr>
+                    <td><strong>_support_duration</strong></td>
+                    <td>1 Year Updates</td>
+                    <td>Support period length</td>
+                </tr>
+                <tr>
+                    <td><strong>_digital_product_type</strong></td>
+                    <td>templates</td>
+                    <td>Product classification</td>
+                </tr>
+                <tr>
+                    <td><strong>_included_items</strong></td>
+                    <td>30 Templates, 4 Guides, Bonus Content</td>
+                    <td>Quick summary of contents</td>
+                </tr>
+            </table>
+
+            <h3>How to Add Custom Fields</h3>
+            <div class="step">
+                <span class="step-number">1</span>
+                <strong>Enable Custom Fields</strong>
+                <p>Post → Screen Options → Check "Custom Fields"</p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">2</span>
+                <strong>Add Field</strong>
+                <p>Scroll to "Custom Fields" section → "Add New"</p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">3</span>
+                <strong>Enter Information</strong>
+                <p>Name: <code>_license_type</code> → Value: <code>personal_and_client_use</code></p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">4</span>
+                <strong>Display on Product Page</strong>
+                <p>Use custom field display plugin or custom template</p>
+            </div>
+        </div>
+
+        <!-- ===== 9. PAYMENT & TAX CONFIGURATION ===== -->
+        <div class="section">
+            <h2>9. Payment & Tax Configuration</h2>
+
+            <h3>Payment Gateway Setup</h3>
+            <table>
+                <tr>
+                    <th>Gateway</th>
+                    <th>Setup Steps</th>
+                    <th>Recommended</th>
+                </tr>
+                <tr>
+                    <td><strong>Stripe</strong></td>
+                    <td>
+                        1. Install WooCommerce Stripe Gateway<br>
+                        2. Go to WooCommerce → Settings → Payments<br>
+                        3. Enable Stripe<br>
+                        4. Connect your Stripe account
+                    </td>
+                    <td class="required">Yes</td>
+                </tr>
+                <tr>
+                    <td><strong>PayPal</strong></td>
+                    <td>
+                        1. Install WooCommerce PayPal Gateway<br>
+                        2. Go to WooCommerce → Settings → Payments<br>
+                        3. Enable PayPal<br>
+                        4. Connect PayPal account
+                    </td>
+                    <td class="optional">Yes</td>
+                </tr>
+            </table>
+
+            <h3>Tax Settings for Digital Products</h3>
+            <div class="subsection">
+                <p><strong>WooCommerce → Settings → Tax</strong></p>
+                <table>
+                    <tr>
+                        <th>Setting</th>
+                        <th>Recommendation</th>
+                        <th>Notes</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Tax Status</strong></td>
+                        <td>Taxable (check your location)</td>
+                        <td>Digital products may be tax-exempt in your area</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tax Class</strong></td>
+                        <td>Digital Product</td>
+                        <td>Create separate class if needed</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Standard Rate</strong></td>
+                        <td>0% for digital</td>
+                        <td>Most regions don't tax digital downloads</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="warning">
+                <strong>Important:</strong> Tax laws vary by location. Consult with an accountant about your jurisdiction's digital product tax requirements. In the US, digital products often have no sales tax. EU has VAT requirements.
+            </div>
+        </div>
+
+        <!-- ===== 10. CUSTOMER DELIVERY & SUPPORT ===== -->
+        <div class="section">
+            <h2>10. Customer Delivery & Support Setup</h2>
+
+            <h3>Automated Email Delivery</h3>
+            <table>
+                <tr>
+                    <th>Email Type</th>
+                    <th>When Sent</th>
+                    <th>What to Include</th>
+                </tr>
+                <tr>
+                    <td><strong>Order Confirmation</strong></td>
+                    <td>Immediately after order</td>
+                    <td>
+                        • Thank you message<br>
+                        • Download links<br>
+                        • Installation instructions<br>
+                        • Quick start guide link
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Order Completed</strong></td>
+                    <td>When payment confirmed</td>
+                    <td>
+                        • Full download links<br>
+                        • Video tutorial (if available)<br>
+                        • Support contact info
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Follow-up (Day 3)</strong></td>
+                    <td>3 days after purchase</td>
+                    <td>
+                        • Video tutorial<br>
+                        • Common questions<br>
+                        • Bonus tips
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Follow-up (Day 7)</strong></td>
+                    <td>7 days after purchase</td>
+                    <td>
+                        • Case studies<br>
+                        • Showcase customer work<br>
+                        • Upsell/cross-sell</td>
+                </tr>
+            </table>
+
+            <h3>Custom Email Template</h3>
+            <div class="code-block">
+Subject: Your Canva Template Pack is Ready to Download
+
+Hi [Customer Name],
+
+Thank you for your purchase! 🎉
+
+Your Canva Template Pack is ready to download. You'll find everything in the file attached to this email:
+
+📦 WHAT YOU'RE GETTING:
+• 30 fully editable Canva templates
+• Design system guide
+• How-to-edit instructions
+• Bonus: Instagram captions, CTAs, content calendar
+
+🚀 QUICK START:
+1. Download the file
+2. Open a template in Canva.com
+3. Click "Make a copy" to edit your version
+4. Swap in your colors, text, and photos
+5. Download and post
+
+❓ QUESTIONS?
+Email us at support@yoursite.com or check our FAQ.
+
+Your 30-day money-back guarantee starts now. Not 100% happy? Let us know.
+
+Happy creating!
+[Your Name]
+P.S. Join our free newsletter for design tips: [link]
+            </div>
+
+            <h3>Customer Support System</h3>
+            <div class="feature-box">
+                <ul>
+                    <li><strong>Email Support:</strong> support@yoursite.com</li>
+                    <li><strong>FAQ Page:</strong> Create FAQ on WordPress</li>
+                    <li><strong>Video Tutorials:</strong> Host on YouTube, embed on product page</li>
+                    <li><strong>Help Documentation:</strong> Link to setup guides</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ===== 11. PRODUCT PAGE WIDGETS ===== -->
+        <div class="section">
+            <h2>11. Product Page Widgets & Elements</h2>
+
+            <h3>Recommended Page Layout</h3>
+            <table>
+                <tr>
+                    <th>Position</th>
+                    <th>Element</th>
+                    <th>Purpose</th>
+                </tr>
+                <tr>
+                    <td><strong>Above Fold</strong></td>
+                    <td>Product hero image + title + price</td>
+                    <td>Immediate value proposition</td>
+                </tr>
+                <tr>
+                    <td><strong>Left Column</strong></td>
+                    <td>Product gallery</td>
+                    <td>Show template previews</td>
+                </tr>
+                <tr>
+                    <td><strong>Right Column</strong></td>
+                    <td>Add to Cart button + short description</td>
+                    <td>Purchase call-to-action</td>
+                </tr>
+                <tr>
+                    <td><strong>Below CTA</strong></td>
+                    <td>Key features list (with icons)</td>
+                    <td>Benefits at a glance</td>
+                </tr>
+                <tr>
+                    <td><strong>After Gallery</strong></td>
+                    <td>Full product description</td>
+                    <td>Detailed information</td>
+                </tr>
+                <tr>
+                    <td><strong>Lower Section</strong></td>
+                    <td>What's included (accordion)</td>
+                    <td>Show all 30 templates</td>
+                </tr>
+                <tr>
+                    <td><strong>FAQ Section</strong></td>
+                    <td>Expandable FAQ (10-15 questions)</td>
+                    <td>Address objections</td>
+                </tr>
+                <tr>
+                    <td><strong>Trust Section</strong></td>
+                    <td>Money-back guarantee + testimonials</td>
+                    <td>Build confidence</td>
+                </tr>
+                <tr>
+                    <td><strong>Bottom</strong></td>
+                    <td>Related products</td>
+                    <td>Cross-sell</td>
+                </tr>
+            </table>
+
+            <h3>WooCommerce Product Widgets</h3>
+            <div class="feature-box">
+                <ul>
+                    <li><strong>Product Price:</strong> Auto-displays current price</li>
+                    <li><strong>Add to Cart Button:</strong> Auto-includes quantity selector</li>
+                    <li><strong>Product Rating:</strong> Shows star ratings & reviews</li>
+                    <li><strong>Product Meta:</strong> SKU, categories, tags</li>
+                    <li><strong>Product Details Tabs:</strong> Description, additional info, reviews</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ===== 12. STEP-BY-STEP IMPLEMENTATION CHECKLIST ===== -->
+        <div class="section">
+            <h2>12. Implementation Checklist</h2>
+
+            <h3>Pre-Launch (Week 1)</h3>
+            <ul class="checklist">
+                <li>Install and configure WooCommerce</li>
+                <li>Configure Stripe/PayPal payment gateway</li>
+                <li>Create WordPress product post</li>
+                <li>Upload product images (featured + gallery)</li>
+                <li>Write product title, descriptions, metadata</li>
+                <li>Set pricing and tax configuration</li>
+                <li>Create product categories and tags</li>
+                <li>Upload downloadable ZIP file</li>
+            </ul>
+
+            <h3>SEO & Content (Week 2)</h3>
+            <ul class="checklist">
+                <li>Install and configure Yoast SEO</li>
+                <li>Set focus keyword and meta description</li>
+                <li>Optimize product description for keywords</li>
+                <li>Add schema markup if needed</li>
+                <li>Create FAQ section</li>
+                <li>Write detailed "How to Use" guide</li>
+                <li>Create support/help page</li>
+            </ul>
+
+            <h3>Email & Automation (Week 2)</h3>
+            <ul class="checklist">
+                <li>Configure WooCommerce email settings</li>
+                <li>Create custom order confirmation email template</li>
+                <li>Set up download link delivery</li>
+                <li>Configure download expiry limits</li>
+                <li>Test payment → email delivery flow</li>
+                <li>Set up follow-up email sequence (optional)</li>
+            </ul>
+
+            <h3>Testing (Week 3)</h3>
+            <ul class="checklist">
+                <li>Test product page layout on mobile</li>
+                <li>Test complete purchase flow (payment → download)</li>
+                <li>Test email delivery to test account</li>
+                <li>Verify file download works</li>
+                <li>Test product search & filtering</li>
+                <li>Check SEO score in Yoast</li>
+                <li>Run site speed test (tools.pingdom.com)</li>
+            </ul>
+
+            <h3>Launch (Week 3)</h3>
+            <ul class="checklist">
+                <li>Set product to "Publish"</li>
+                <li>Verify product appears in shop</li>
+                <li>Send test purchase to yourself</li>
+                <li>Announce via email list (if you have one)</li>
+                <li>Share on social media</li>
+                <li>Monitor first orders carefully</li>
+            </ul>
+
+            <h3>Post-Launch (Ongoing)</h3>
+            <ul class="checklist">
+                <li>Monitor sales and conversion rate</li>
+                <li>Respond to customer inquiries quickly</li>
+                <li>Gather customer testimonials</li>
+                <li>Update product description based on feedback</li>
+                <li>Track refund requests and reasons</li>
+                <li>Optimize based on analytics data</li>
+            </ul>
+        </div>
+
+        <!-- ===== 13. MARKETING & PROMOTION ===== -->
+        <div class="section">
+            <h2>13. Marketing & Promotion Setup</h2>
+
+            <h3>Product Page Promotion</h3>
+            <table>
+                <tr>
+                    <th>Channel</th>
+                    <th>Action</th>
+                    <th>Timeline</th>
+                </tr>
+                <tr>
+                    <td><strong>Email List</strong></td>
+                    <td>Send announcement to subscribers</td>
+                    <td>Day of launch</td>
+                </tr>
+                <tr>
+                    <td><strong>Social Media</strong></td>
+                    <td>Post on Instagram, Facebook, LinkedIn, Twitter</td>
+                    <td>Days 1, 3, 7, 14</td>
+                </tr>
+                <tr>
+                    <td><strong>Blog Post</strong></td>
+                    <td>Write in-depth blog post about templates</td>
+                    <td>Before or at launch</td>
+                </tr>
+                <tr>
+                    <td><strong>Pinterest</strong></td>
+                    <td>Create pins linking to product page</td>
+                    <td>At launch (ongoing)</td>
+                </tr>
+                <tr>
+                    <td><strong>YouTube</strong></td>
+                    <td>Create product walkthrough video</td>
+                    <td>Before launch</td>
+                </tr>
+                <tr>
+                    <td><strong>Affiliate Program</strong></td>
+                    <td>Invite bloggers/creators to promote</td>
+                    <td>2 weeks after launch</td>
+                </tr>
+            </table>
+
+            <h3>Promotional Copy for Social Media</h3>
+            <div class="subsection">
+                <p><strong>Instagram Caption:</strong></p>
+                <p>"Just launched: 30 Canva templates built for creators who want their Instagram to look intentional without spending hours on design. Carousels, quotes, stories—all sharing one cohesive system. Link in bio."</p>
+
+                <p><strong>Facebook Post:</strong></p>
+                <p>"Spending too much time on design? These 30 templates take the guesswork out of social media graphics. Built on one color and font system so everything you post looks like it belongs together. Check them out → [link]"</p>
+
+                <p><strong>LinkedIn Post:</strong></p>
+                <p>"Your LinkedIn feed should reflect your professional brand. I built 30 templates specifically for founders and coaches who want consistent, polished posts without the designer budget. Every post takes minutes instead of hours."</p>
+            </div>
+
+            <h3>Promotional Strategies</h3>
+            <div class="feature-box">
+                <ul>
+                    <li><strong>Launch Discount:</strong> 20% off first 100 sales ($13.60 instead of $17)</li>
+                    <li><strong>Email Sequence:</strong> 5-email sequence introducing benefits</li>
+                    <li><strong>Retargeting Ads:</strong> Facebook/Instagram ads to site visitors</li>
+                    <li><strong>Lead Magnet:</strong> Free 3-template sample to build email list</li>
+                    <li><strong>Testimonials:</strong> Feature customer quotes and results</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ===== 14. ANALYTICS & OPTIMIZATION ===== -->
+        <div class="section">
+            <h2>14. Analytics & Optimization</h2>
+
+            <h3>Key Metrics to Track</h3>
+            <table>
+                <tr>
+                    <th>Metric</th>
+                    <th>How to Track</th>
+                    <th>Target</th>
+                </tr>
+                <tr>
+                    <td><strong>Page Views</strong></td>
+                    <td>Google Analytics</td>
+                    <td>100+ per month</td>
+                </tr>
+                <tr>
+                    <td><strong>Conversion Rate</strong></td>
+                    <td>WooCommerce Sales / Visits</td>
+                    <td>2-5%</td>
+                </tr>
+                <tr>
+                    <td><strong>Average Order Value</strong></td>
+                    <td>WooCommerce Reports</td>
+                    <td>$17 (pricing)</td>
+                </tr>
+                <tr>
+                    <td><strong>Refund Rate</strong></td>
+                    <td>Track refund requests</td>
+                    <td>Under 10%</td>
+                </tr>
+                <tr>
+                    <td><strong>Customer Satisfaction</strong></td>
+                    <td>Product reviews / ratings</td>
+                    <td>4.5+ stars</td>
+                </tr>
+                <tr>
+                    <td><strong>Bounce Rate</strong></td>
+                    <td>Google Analytics</td>
+                    <td>Under 50%</td>
+                </tr>
+            </table>
+
+            <h3>Setup Google Analytics for WooCommerce</h3>
+            <div class="step">
+                <span class="step-number">1</span>
+                <strong>Install MonsterInsights or GA plugin</strong>
+                <p>Automatically tracks WooCommerce sales and funnels</p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">2</span>
+                <strong>Configure e-commerce tracking</strong>
+                <p>MonsterInsights → Settings → E-Commerce → Enable</p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">3</span>
+                <strong>View sales reports</strong>
+                <p>MonsterInsights → Reports → E-Commerce Sales</p>
+            </div>
+
+            <h3>Optimization Tips</h3>
+            <div class="feature-box">
+                <ul>
+                    <li><strong>Page Speed:</strong> Compress images, lazy load gallery, minimize CSS/JS</li>
+                    <li><strong>Mobile Optimization:</strong> Test on iPhone/Android, ensure buttons are touch-friendly</li>
+                    <li><strong>Copy Testing:</strong> A/B test product title, description, CTA button text</li>
+                    <li><strong>Price Testing:</strong> Try $17 vs $19 vs $22 to find sweet spot</li>
+                    <li><strong>Image Optimization:</strong> High-quality product photos increase conversion 20-40%</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ===== 15. SECURITY & BACKUP ===== -->
+        <div class="section">
+            <h2>15. Security & Backup</h2>
+
+            <h3>Essential Security Measures</h3>
+            <ul class="checklist">
+                <li>Install security plugin (Wordfence, Sucuri)</li>
+                <li>Enable two-factor authentication on admin account</li>
+                <li>Use strong, unique password for WordPress admin</li>
+                <li>Keep WordPress, plugins, themes updated</li>
+                <li>Set up regular backups (daily automated)</li>
+                <li>Use HTTPS/SSL certificate</li>
+                <li>Disable file editor (Prevent code injection)</li>
+                <li>Restrict login attempts (Limit brute force attacks)</li>
+            </ul>
+
+            <h3>Backup Plugin Recommendations</h3>
+            <table>
+                <tr>
+                    <th>Plugin</th>
+                    <th>Features</th>
+                    <th>Free/Paid</th>
+                </tr>
+                <tr>
+                    <td><strong>UpdraftPlus</strong></td>
+                    <td>Daily backups, cloud storage, easy restore</td>
+                    <td>Free/Paid</td>
+                </tr>
+                <tr>
+                    <td><strong>Jetpack</strong></td>
+                    <td>Daily backups, malware scanning, security</td>
+                    <td>Free/Paid</td>
+                </tr>
+                <tr>
+                    <td><strong>BackWPup</strong></td>
+                    <td>Database + files, Google Drive integration</td>
+                    <td>Free</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- ===== 16. COMPLIANCE & LEGAL ===== -->
+        <div class="section">
+            <h2>16. Compliance & Legal</h2>
+
+            <h3>Required Pages</h3>
+            <table>
+                <tr>
+                    <th>Page</th>
+                    <th>Purpose</th>
+                    <th>Required?</th>
+                </tr>
+                <tr>
+                    <td><strong>Privacy Policy</strong></td>
+                    <td>How you collect and use customer data</td>
+                    <td class="required">Required</td>
+                </tr>
+                <tr>
+                    <td><strong>Terms of Service</strong></td>
+                    <td>License, acceptable use, disclaimers</td>
+                    <td class="required">Required</td>
+                </tr>
+                <tr>
+                    <td><strong>Return/Refund Policy</strong></td>
+                    <td>30-day money-back guarantee details</td>
+                    <td class="required">Required</td>
+                </tr>
+                <tr>
+                    <td><strong>License Agreement</strong></td>
+                    <td>What customers can/can't do with templates</td>
+                    <td>Optional but recommended</td>
+                </tr>
+            </table>
+
+            <h3>License Terms for Your Product</h3>
+            <div class="subsection">
+                <p><strong>PERMITTED USES:</strong></p>
+                <ul>
+                    <li>Personal use in own social media</li>
+                    <li>Client projects (for freelancers/agencies)</li>
+                    <li>Internal business use</li>
+                    <li>Unlimited edits and downloads</li>
+                </ul>
+
+                <p><strong>PROHIBITED USES:</strong></p>
+                <ul>
+                    <li>Selling or redistributing templates to others</li>
+                    <li>Claiming templates as your own design</li>
+                    <li>Using templates for competing products</li>
+                    <li>Mass distribution without permission</li>
+                </ul>
+            </div>
+
+            <div class="warning">
+                <strong>GDPR/Privacy:</strong> If selling internationally, ensure your Privacy Policy and data handling comply with GDPR, CCPA, and other regulations. Consider using a service like iubenda.com for legal page generation.
+            </div>
+        </div>
+
+        <!-- ===== 17. TROUBLESHOOTING ===== -->
+        <div class="section">
+            <h2>17. Common Issues & Troubleshooting</h2>
+
+            <h3>Issue: Download Links Not Working</h3>
+            <div class="subsection">
+                <p><strong>Cause:</strong> File path incorrect or file permissions wrong</p>
+                <p><strong>Solution:</strong></p>
+                <ol>
+                    <li>Check file is uploaded to /wp-content/uploads/woocommerce_uploads/</li>
+                    <li>Verify file permissions are 644</li>
+                    <li>Try re-uploading the file</li>
+                    <li>Check file size doesn't exceed hosting limit</li>
+                </ol>
+            </div>
+
+            <h3>Issue: Email Not Sending to Customers</h3>
+            <div class="subsection">
+                <p><strong>Cause:</strong> SMTP configuration or email limits</p>
+                <p><strong>Solution:</strong></p>
+                <ol>
+                    <li>Install WP Mail SMTP plugin</li>
+                    <li>Connect Gmail or SendGrid account</li>
+                    <li>Send test email from WooCommerce</li>
+                    <li>Check spam folder on test account</li>
+                    <li>Whitelist your domain in email service</li>
+                </ol>
+            </div>
+
+            <h3>Issue: Product Not Showing in Shop</h3>
+            <div class="subsection">
+                <p><strong>Cause:</strong> Product not published or visibility settings</p>
+                <p><strong>Solution:</strong></p>
+                <ol>
+                    <li>Check product status is "Publish"</li>
+                    <li>Verify product category is assigned</li>
+                    <li>Check product visibility = "Visible"</li>
+                    <li>Confirm product isn't out of stock (if configured)</li>
+                    <li>Clear WordPress cache if using caching plugin</li>
+                </ol>
+            </div>
+
+            <h3>Issue: Low Conversion Rate (&lt;1%)</h3>
+            <div class="subsection">
+                <p><strong>Cause:</strong> Product page issues, pricing, or traffic quality</p>
+                <p><strong>Solution:</strong></p>
+                <ol>
+                    <li>Improve product images (biggest conversion factor)</li>
+                    <li>Add customer testimonials/reviews</li>
+                    <li>Add FAQ section to address objections</li>
+                    <li>Test different headlines and copy</li>
+                    <li>Analyze visitor behavior (heatmaps with Hotjar)</li>
+                    <li>Check Google Analytics for bounce points</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- ===== FINAL SUMMARY ===== -->
+        <div class="section">
+            <h2>Final Summary & Next Steps</h2>
+
+            <div class="subsection">
+                <h3>What You Have Ready</h3>
+                <ul>
+                    <li>✓ Complete product documentation (Canva-Template-Pack.html)</li>
+                    <li>✓ Product listing for Aqvani platform</li>
+                    <li>✓ 30 templates organized by category</li>
+                    <li>✓ Design system specifications</li>
+                    <li>✓ Marketing copy and social posts</li>
+                    <li>✓ Customer delivery structure</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <h3>WordPress Implementation (Next 3 Weeks)</h3>
+                <ol>
+                    <li><strong>Week 1:</strong> Install WordPress, WooCommerce, and essential plugins</li>
+                    <li><strong>Week 1-2:</strong> Create product post with all details and images</li>
+                    <li><strong>Week 2:</strong> Configure SEO, payments, and email delivery</li>
+                    <li><strong>Week 3:</strong> Test complete purchase flow and launch</li>
+                    <li><strong>Ongoing:</strong> Monitor analytics and optimize based on data</li>
+                </ol>
+            </div>
+
+            <div class="tip">
+                <strong>Pro Tip:</strong> Your first week's focus should be product images and descriptions. These two factors account for 80% of conversion rate differences. Spend 80% of your effort on great product photos and compelling copy.
+            </div>
+
+            <p style="margin-top: 30px; color: #666; font-size: 0.95em;">
+                <strong>Document Version:</strong> 1.0 | <strong>Created:</strong> 2026-09-20 | <strong>For:</strong> Canva Template Pack Digital Product
+            </p>
+        </div>
+    </div>
+</body>
+</html>

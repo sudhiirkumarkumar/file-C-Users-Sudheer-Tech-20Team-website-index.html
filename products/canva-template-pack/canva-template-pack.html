@@ -1,0 +1,2008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canva Template Pack — Product Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2C3E50;
+            --accent: #E8B4A8;
+            --text: #2C3E50;
+            --light-bg: #F7F5F3;
+            --border: #D4C8C1;
+            --success: #7A9D7E;
+            scroll-behavior: smooth;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #F7F5F3;
+                --accent: #E8B4A8;
+                --text: #E8E4E0;
+                --light-bg: #1A1614;
+                --border: #3A3530;
+            }
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: var(--text);
+            background: var(--light-bg);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .container {
+                background: #2A2420;
+            }
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: var(--primary);
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--primary);
+            border-left: 4px solid var(--accent);
+            padding-left: 15px;
+        }
+
+        h3 {
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            color: var(--text);
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            color: var(--accent);
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .template-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .template-card {
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 20px;
+            background: var(--light-bg);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .template-card {
+                background: #1A1614;
+            }
+        }
+
+        .template-card h4 {
+            color: var(--accent);
+            margin-bottom: 8px;
+            font-size: 0.95em;
+            font-weight: 600;
+        }
+
+        .template-card p {
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin: 8px 0;
+        }
+
+        .color-palette {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .color-box {
+            border-radius: 6px;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-weight: 500;
+            border: 1px solid var(--border);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .color-label {
+            font-size: 0.85em;
+            margin-top: 8px;
+            font-family: monospace;
+            opacity: 0.9;
+        }
+
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .benefit-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .benefit-item {
+            padding: 15px;
+            background: var(--light-bg);
+            border-left: 4px solid var(--accent);
+            border-radius: 4px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .benefit-item {
+                background: #1A1614;
+            }
+        }
+
+        .benefit-item strong {
+            color: var(--accent);
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border);
+            padding: 20px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .faq-answer {
+            color: var(--text);
+            line-height: 1.8;
+        }
+
+        .highlight-box {
+            background: var(--light-bg);
+            border-left: 4px solid var(--accent);
+            padding: 20px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .highlight-box {
+                background: #1A1614;
+            }
+        }
+
+        .marketing-hooks {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .hook {
+            padding: 15px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            font-style: italic;
+            color: var(--text);
+        }
+
+        .nav-toc {
+            background: var(--light-bg);
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 40px;
+            border-left: 4px solid var(--accent);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .nav-toc {
+                background: #1A1614;
+            }
+        }
+
+        .nav-toc h3 {
+            margin-top: 0;
+        }
+
+        .nav-toc ol {
+            margin-left: 20px;
+        }
+
+        .nav-toc li {
+            margin-bottom: 8px;
+        }
+
+        .nav-toc a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .nav-toc a:hover {
+            text-decoration: underline;
+        }
+
+        .tag {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+
+        .pricing-box {
+            background: var(--accent);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .pricing-box h3 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .pricing-box .price {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .social-post {
+            border: 1px solid var(--border);
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            background: var(--light-bg);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .social-post {
+                background: #1A1614;
+            }
+        }
+
+        .social-platform {
+            font-weight: 600;
+            color: var(--accent);
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .social-post p {
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        .quality-checklist {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 12px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            background: var(--light-bg);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .checklist-item {
+                background: #1A1614;
+            }
+        }
+
+        .checklist-item::before {
+            content: "✓";
+            color: var(--success);
+            font-weight: bold;
+            margin-right: 12px;
+            min-width: 20px;
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: var(--light-bg);
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            th {
+                background: #1A1614;
+            }
+        }
+
+        tr:hover {
+            background: var(--light-bg);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            tr:hover {
+                background: #1A1614;
+            }
+        }
+
+        .stat-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .stat-card {
+            background: var(--light-bg);
+            padding: 25px;
+            border-radius: 6px;
+            text-align: center;
+            border-top: 3px solid var(--accent);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .stat-card {
+                background: #1A1614;
+            }
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: var(--accent);
+        }
+
+        .stat-label {
+            font-size: 0.95em;
+            margin-top: 10px;
+            color: var(--text);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <h1>Canva Template Pack</h1>
+        <p class="subtitle">30 Editable Social Media Templates — Complete Product Documentation</p>
+
+        <div class="pricing-box">
+            <h3>Recommended Price Point</h3>
+            <div class="price">$9–$25</div>
+            <p>Premium digital product with professional design and immediate usability</p>
+        </div>
+
+        <!-- TABLE OF CONTENTS -->
+        <div class="nav-toc">
+            <h3>📋 Quick Navigation</h3>
+            <ol>
+                <li><a href="#overview">Product Overview</a></li>
+                <li><a href="#templates">30 Template List</a></li>
+                <li><a href="#design-system">Design System</a></li>
+                <li><a href="#color-palette">Color Palette</a></li>
+                <li><a href="#typography">Typography</a></li>
+                <li><a href="#canva-instructions">Canva Editing Instructions</a></li>
+                <li><a href="#quick-start">Quick Start Guide</a></li>
+                <li><a href="#bonus">Bonus Content</a></li>
+                <li><a href="#delivery">Product Delivery Structure</a></li>
+                <li><a href="#aqvani-listing">Aqvani.shop Product Listing</a></li>
+                <li><a href="#benefits">Key Benefits & Features</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="#marketing">Marketing Materials</a></li>
+                <li><a href="#quality-check">Quality Checklist</a></li>
+            </ol>
+        </div>
+
+        <!-- SECTION 1: PRODUCT OVERVIEW -->
+        <div class="section" id="overview">
+            <h2>1. Product Overview</h2>
+
+            <h3>Product Name</h3>
+            <p><strong>Canva Template Pack — 30 Editable Social Media Templates</strong></p>
+
+            <h3>Core Promise</h3>
+            <p>Create professional-looking social media content in minutes — without starting from scratch.</p>
+
+            <h3>Target Customer Personas</h3>
+            <div class="benefit-list">
+                <div class="benefit-item">
+                    <strong>🏢 Small Business Owners</strong>
+                    <p>Need consistent, professional content without hiring a designer</p>
+                </div>
+                <div class="benefit-item">
+                    <strong>👨‍🏫 Coaches & Consultants</strong>
+                    <p>Build authority through regular, branded content sharing</p>
+                </div>
+                <div class="benefit-item">
+                    <strong>💼 Freelancers</strong>
+                    <p>Showcase work and attract clients with polished social presence</p>
+                </div>
+                <div class="benefit-item">
+                    <strong>📱 Content Creators</strong>
+                    <p>Save production time and focus on strategy, not design</p>
+                </div>
+                <div class="benefit-item">
+                    <strong>📸 Instagram Creators</strong>
+                    <p>Maintain visual consistency across feeds and stories</p>
+                </div>
+                <div class="benefit-item">
+                    <strong>🛍️ Online Sellers</strong>
+                    <p>Promote products professionally and close sales faster</p>
+                </div>
+                <div class="benefit-item">
+                    <strong>⭐ Personal Brands</strong>
+                    <p>Build a cohesive brand presence across social platforms</p>
+                </div>
+                <div class="benefit-item">
+                    <strong>📊 Digital Marketers</strong>
+                    <p>Quickly produce campaign assets without back-and-forth with designers</p>
+                </div>
+                <div class="benefit-item">
+                    <strong>🎯 Service Businesses</strong>
+                    <p>Showcase expertise and build trust with consistent content</p>
+                </div>
+                <div class="benefit-item">
+                    <strong>🎨 Design Beginners</strong>
+                    <p>Create stunning graphics without graphic design experience</p>
+                </div>
+            </div>
+
+            <h3>Positioning Statement</h3>
+            <p><em>"A practical, beginner-friendly template system that helps users create consistent, professional social media content quickly — so they can focus on growing their business, not learning design."</em></p>
+        </div>
+
+        <!-- SECTION 2: 30 TEMPLATE LIST -->
+        <div class="section" id="templates">
+            <h2>2. 30 Template List</h2>
+
+            <h3>Category 1: Carousel Templates (10 templates)</h3>
+            <p>Perfect for LinkedIn, Instagram, TikTok, and Pinterest. Each carousel includes a cover slide, 3–6 content slides, and a CTA slide.</p>
+
+            <div class="template-grid">
+                <div class="template-card">
+                    <h4>CT-01: Educational Carousel</h4>
+                    <p>Teach a concept or skill. Great for thought leadership and demonstrating expertise. Includes numbered slides and visual hierarchy.</p>
+                </div>
+                <div class="template-card">
+                    <h4>CT-02: 5-Tips Carousel</h4>
+                    <p>Share 5 actionable tips with icons, descriptions, and examples. Perfect for coaches and service businesses.</p>
+                </div>
+                <div class="template-card">
+                    <h4>CT-03: How-To/Tutorial Carousel</h4>
+                    <p>Step-by-step instructions with space for images at each stage. Ideal for DIY content and process-driven posts.</p>
+                </div>
+                <div class="template-card">
+                    <h4>CT-04: Mistakes to Avoid Carousel</h4>
+                    <p>Highlight common mistakes and solutions. High engagement topic that positions you as an expert.</p>
+                </div>
+                <div class="template-card">
+                    <h4>CT-05: Checklist Carousel</h4>
+                    <p>Checklist format with boxes to check off. Useful for preparation, planning, and goal-tracking content.</p>
+                </div>
+                <div class="template-card">
+                    <h4>CT-06: Step-by-Step Carousel</h4>
+                    <p>Process-oriented with numbered steps, descriptions, and space for supporting visuals.</p>
+                </div>
+                <div class="template-card">
+                    <h4>CT-07: Problem → Solution Carousel</h4>
+                    <p>Identify a problem, show consequences, then reveal your solution. Perfect for selling services.</p>
+                </div>
+                <div class="template-card">
+                    <h4>CT-08: Before → After Carousel</h4>
+                    <p>Visual transformation carousel. Great for coaches, fitness pros, and home/lifestyle businesses.</p>
+                </div>
+                <div class="template-card">
+                    <h4>CT-09: List-Style Carousel</h4>
+                    <p>Clean list format with bullet points and descriptions. Works for resources, recommendations, and collections.</p>
+                </div>
+                <div class="template-card">
+                    <h4>CT-10: Promotional Carousel</h4>
+                    <p>Carousel designed to promote a product, service, or offer. Includes pricing, benefits, and CTA.</p>
+                </div>
+            </div>
+
+            <h3>Category 2: Quote & Engagement Posts (10 templates)</h3>
+            <p>Single-slide designs for feed posts. These are highly sharable, build engagement, and work across all platforms.</p>
+
+            <div class="template-grid">
+                <div class="template-card">
+                    <h4>QP-01: Inspirational Quote</h4>
+                    <p>Motivational quote with elegant typography. Perfect for building community and daily engagement.</p>
+                </div>
+                <div class="template-card">
+                    <h4>QP-02: Business Quote</h4>
+                    <p>Professional wisdom quote with space for attribution. Great for B2B and thought leadership.</p>
+                </div>
+                <div class="template-card">
+                    <h4>QP-03: Productivity Quote</h4>
+                    <p>Focus on efficiency and results. Resonates with entrepreneurs and goal-driven audiences.</p>
+                </div>
+                <div class="template-card">
+                    <h4>QP-04: Entrepreneur Quote</h4>
+                    <p>Startup/business-focused wisdom. Perfect for bootstrappers and business owners.</p>
+                </div>
+                <div class="template-card">
+                    <h4>QP-05: Question Post</h4>
+                    <p>Engagement post with large question text. Designed to spark comments and conversation.</p>
+                </div>
+                <div class="template-card">
+                    <h4>QP-06: This-or-That Post</h4>
+                    <p>Binary choice format. Users comment with their preference, driving engagement and insights.</p>
+                </div>
+                <div class="template-card">
+                    <h4>QP-07: Myth vs Fact</h4>
+                    <p>Split design showing misconception vs reality. Perfect for debunking and education.</p>
+                </div>
+                <div class="template-card">
+                    <h4>QP-08: Quick Tip</h4>
+                    <p>Single actionable tip with bold headline. Great for consistent daily posting.</p>
+                </div>
+                <div class="template-card">
+                    <h4>QP-09: Client Appreciation Post</h4>
+                    <p>Celebrate your customers/clients. Shows social proof and builds community loyalty.</p>
+                </div>
+                <div class="template-card">
+                    <h4>QP-10: Promotional Announcement</h4>
+                    <p>Clean announcement design for launches, sales, and new offerings.</p>
+                </div>
+            </div>
+
+            <h3>Category 3: Story Graphics (10 templates)</h3>
+            <p>Vertical designs (1080 x 1920px or 1080 x 1350px) optimized for Instagram Stories and other vertical platforms.</p>
+
+            <div class="template-grid">
+                <div class="template-card">
+                    <h4>ST-01: New Product Announcement</h4>
+                    <p>Product-focused story with space for image, product name, and key features.</p>
+                </div>
+                <div class="template-card">
+                    <h4>ST-02: Sale Announcement</h4>
+                    <p>Urgency-driven design highlighting discount, deadline, and CTA.</p>
+                </div>
+                <div class="template-card">
+                    <h4>ST-03: Poll Story</h4>
+                    <p>Poll question with option A and B. Drives interactive engagement on Stories.</p>
+                </div>
+                <div class="template-card">
+                    <h4>ST-04: Question Sticker</h4>
+                    <p>Large question text inviting audience responses and direct messages.</p>
+                </div>
+                <div class="template-card">
+                    <h4>ST-05: Behind-the-Scenes</h4>
+                    <p>Casual, lifestyle-focused with space for day-in-the-life photos and captions.</p>
+                </div>
+                <div class="template-card">
+                    <h4>ST-06: New Post Announcement</h4>
+                    <p>Teasers for feed posts. Drives traffic from Stories to feed content.</p>
+                </div>
+                <div class="template-card">
+                    <h4>ST-07: Limited-Time Offer</h4>
+                    <p>Countdown timer visual with offer details and urgency messaging.</p>
+                </div>
+                <div class="template-card">
+                    <h4>ST-08: Testimonial/Review</h4>
+                    <p>Customer quote with photo and rating. Builds trust and social proof.</p>
+                </div>
+                <div class="template-card">
+                    <h4>ST-09: Free Resource Promotion</h4>
+                    <p>Lead magnet or download offer. Designed to capture emails or links.</p>
+                </div>
+                <div class="template-card">
+                    <h4>ST-10: Call-to-Action Story</h4>
+                    <p>Generic CTA template for various offers — "Learn More," "Shop Now," "Register," etc.</p>
+                </div>
+            </div>
+
+            <div class="stat-row">
+                <div class="stat-card">
+                    <div class="stat-number">30</div>
+                    <div class="stat-label">Total Templates</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Categories</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">Cohesive Design System</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 3: DESIGN SYSTEM -->
+        <div class="section" id="design-system">
+            <h2>3. Design System</h2>
+
+            <h3>Core Design Principles</h3>
+            <ul>
+                <li><strong>Modern Editorial Design:</strong> Clean lines, intentional spacing, professional layouts</li>
+                <li><strong>Elegant Typography:</strong> 2–3 complementary fonts with strong hierarchy</li>
+                <li><strong>Generous Whitespace:</strong> Breathing room prevents cluttered, amateurish feel</li>
+                <li><strong>Subtle Shapes:</strong> Minimal geometric elements for visual interest without distraction</li>
+                <li><strong>Professional Image Placement:</strong> Clear, intentional spaces for customer images</li>
+                <li><strong>Consistent Margins & Padding:</strong> Aligned grid system throughout</li>
+                <li><strong>Visual Hierarchy:</strong> Headline, subheading, body text clearly differentiated</li>
+                <li><strong>Trend-Aware but Timeless:</strong> Modern enough to feel current, classic enough to age well</li>
+            </ul>
+
+            <h3>Design Aesthetic</h3>
+            <p><strong>Primary:</strong> Modern + Elegant + Premium + Clean + Trend-aware</p>
+
+            <h3>What to Avoid</h3>
+            <ul>
+                <li>❌ Cheap-looking gradients or over-processed effects</li>
+                <li>❌ Excessive decorative elements or "busy" layouts</li>
+                <li>❌ More than 3 typefaces per design</li>
+                <li>❌ Tiny, hard-to-read text</li>
+                <li>❌ Generic AI-generated imagery feel</li>
+                <li>❌ Overly complicated layouts that are hard to edit</li>
+                <li>❌ Inconsistent spacing or alignment</li>
+                <li>❌ Too many competing focal points</li>
+            </ul>
+
+            <h3>Template Structure Best Practices</h3>
+            <ol>
+                <li><strong>Modular Design:</strong> Each section is independently editable without affecting layout</li>
+                <li><strong>Image Placeholders:</strong> Clear, labeled spaces for customer images with exact dimensions</li>
+                <li><strong>Text Hierarchy:</strong> Headlines, subheadings, body text, and CTAs have distinct styling</li>
+                <li><strong>Alignment Grid:</strong> All elements snap to invisible grid for professional appearance</li>
+                <li><strong>Consistent Spacing:</strong> Standard margins (20px, 40px, 60px) throughout pack</li>
+                <li><strong>Color Application:</strong> Primary, secondary, accent, text, and background colors used consistently</li>
+                <li><strong>Simple CTA Buttons:</strong> Easy-to-edit buttons with changeable text and color</li>
+                <li><strong>Mobile-First Design:</strong> Text sizes and spacing account for mobile viewing</li>
+            </ol>
+        </div>
+
+        <!-- SECTION 4: COLOR PALETTE -->
+        <div class="section" id="color-palette">
+            <h2>4. Color Palette</h2>
+
+            <p>A flexible, sophisticated palette that works across industries and is easy for customers to customize.</p>
+
+            <h3>Primary Palette</h3>
+            <div class="color-palette">
+                <div class="color-box" style="background-color: #F7F5F3; color: #2C3E50; border: 2px solid #D4C8C1;">
+                    <strong>Warm Ivory</strong>
+                    <div class="color-label">#F7F5F3</div>
+                </div>
+                <div class="color-box" style="background-color: #E8DDD3; color: #2C3E50;">
+                    <strong>Soft Beige</strong>
+                    <div class="color-label">#E8DDD3</div>
+                </div>
+                <div class="color-box" style="background-color: #2C3E50;">
+                    <strong>Charcoal</strong>
+                    <div class="color-label">#2C3E50</div>
+                </div>
+                <div class="color-box" style="background-color: #E8B4A8;">
+                    <strong>Dusty Rose</strong>
+                    <div class="color-label">#E8B4A8</div>
+                </div>
+                <div class="color-box" style="background-color: #D97660;">
+                    <strong>Muted Terracotta</strong>
+                    <div class="color-label">#D97660</div>
+                </div>
+                <div class="color-box" style="background-color: #B5A39F;">
+                    <strong>Soft Taupe</strong>
+                    <div class="color-label">#B5A39F</div>
+                </div>
+            </div>
+
+            <h3>Color Usage Guidelines</h3>
+            <ul>
+                <li><strong>Warm Ivory (#F7F5F3):</strong> Primary background color for all templates</li>
+                <li><strong>Soft Beige (#E8DDD3):</strong> Secondary background, subtle contrast, divider lines</li>
+                <li><strong>Charcoal (#2C3E50):</strong> Primary text color, headlines, dark accents</li>
+                <li><strong>Dusty Rose (#E8B4A8):</strong> Accent color for CTAs, highlights, emphasis</li>
+                <li><strong>Muted Terracotta (#D97660):</strong> Secondary accent for variety, buttons</li>
+                <li><strong>Soft Taupe (#B5A39F):</strong> Subtle dividers, secondary text, metadata</li>
+            </ul>
+
+            <h3>How Customers Can Change Colors (Canva Instructions)</h3>
+            <ol>
+                <li>Open the template in Canva</li>
+                <li>Click on any colored element (background, shape, text, button)</li>
+                <li>In the right panel, click on the color swatch</li>
+                <li>Choose a new color from the color picker</li>
+                <li>To change all instances of a color: use Find & Replace feature</li>
+                <li>Tip: Canva's color palette can be customized to match your brand</li>
+            </ol>
+
+            <h3>Alternative Palette Suggestions for Customers</h3>
+            <p>The color system is designed to work with any palette. Here are alternative combinations customers could use:</p>
+            <ul>
+                <li><strong>Luxury/Premium:</strong> Deep Navy + Gold + Cream + Black</li>
+                <li><strong>Wellness/Health:</strong> Sage Green + Cream + Charcoal + Soft Pink</li>
+                <li><strong>Tech/Modern:</strong> Slate Blue + White + Accent Orange</li>
+                <li><strong>Creative/Bold:</strong> Deep Purple + Mustard Yellow + Cream</li>
+                <li><strong>Corporate/Professional:</strong> Dark Blue + White + Accent Teal</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 5: TYPOGRAPHY -->
+        <div class="section" id="typography">
+            <h2>5. Typography</h2>
+
+            <h3>Font Selection (Canva-Available Fonts)</h3>
+
+            <h4>1. Display Font (Headlines)</h4>
+            <p><strong>Font:</strong> Poppins Bold or Playfair Display</p>
+            <p><strong>Usage:</strong> Main headlines, template titles, large CTAs</p>
+            <p><strong>Size Range:</strong> 48–72px (mobile: 32–48px)</p>
+            <p><strong>Weight:</strong> Bold (700–800)</p>
+            <p><strong>Purpose:</strong> Grab attention, establish hierarchy</p>
+
+            <h4>2. Sans-Serif Font (Body Text)</h4>
+            <p><strong>Font:</strong> Inter or Montserrat</p>
+            <p><strong>Usage:</strong> Subheadings, body text, descriptions</p>
+            <p><strong>Size Range:</strong> 14–24px</p>
+            <p><strong>Weight Range:</strong> Regular (400) to Semi-bold (600)</p>
+            <p><strong>Purpose:</strong> Readability, clean appearance</p>
+
+            <h4>3. Optional Accent Font</h4>
+            <p><strong>Font:</strong> Raleway or Lora</p>
+            <p><strong>Usage:</strong> Quotes, captions, special emphasis</p>
+            <p><strong>Size Range:</strong> 16–32px</p>
+            <p><strong>Purpose:</strong> Visual interest without overcomplication</p>
+
+            <h3>Typography Hierarchy</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Element</th>
+                        <th>Font</th>
+                        <th>Size</th>
+                        <th>Weight</th>
+                        <th>Color</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Primary Headline</td>
+                        <td>Poppins</td>
+                        <td>56–72px</td>
+                        <td>Bold</td>
+                        <td>Charcoal</td>
+                    </tr>
+                    <tr>
+                        <td>Secondary Headline</td>
+                        <td>Poppins</td>
+                        <td>32–44px</td>
+                        <td>Semi-bold</td>
+                        <td>Charcoal</td>
+                    </tr>
+                    <tr>
+                        <td>Body Text</td>
+                        <td>Inter</td>
+                        <td>16–20px</td>
+                        <td>Regular</td>
+                        <td>Charcoal</td>
+                    </tr>
+                    <tr>
+                        <td>Accent/Quote</td>
+                        <td>Lora</td>
+                        <td>20–32px</td>
+                        <td>Regular</td>
+                        <td>Dusty Rose</td>
+                    </tr>
+                    <tr>
+                        <td>CTA/Button</td>
+                        <td>Montserrat</td>
+                        <td>14–18px</td>
+                        <td>Semi-bold</td>
+                        <td>White (on color)</td>
+                    </tr>
+                    <tr>
+                        <td>Metadata/Date</td>
+                        <td>Inter</td>
+                        <td>12–14px</td>
+                        <td>Regular</td>
+                        <td>Soft Taupe</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Mobile Readability Considerations</h3>
+            <ul>
+                <li>Minimum text size: 14px (readable on mobile without zooming)</li>
+                <li>Line height: 1.5–1.8 for body text (comfortable spacing)</li>
+                <li>Maximum line length: 50–70 characters per line</li>
+                <li>Headlines scale down appropriately for Instagram Stories</li>
+                <li>All text remains legible at 60% zoom on mobile</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 6: CANVA EDITING INSTRUCTIONS -->
+        <div class="section" id="canva-instructions">
+            <h2>6. Canva Editing Instructions</h2>
+
+            <h3>How to Make Templates Easy to Edit</h3>
+
+            <h4>Element Organization</h4>
+            <ul>
+                <li>Group related elements together (e.g., all headline text, all images)</li>
+                <li>Label text layers clearly: "Headline," "Body Text," "CTA Button," "Image Placeholder"</li>
+                <li>Use folders in Canva to organize sections logically</li>
+                <li>Lock background and structural elements so they're not accidentally moved</li>
+                <li>Leave decorative elements unlocked for customer customization</li>
+            </ul>
+
+            <h4>Text Editing Best Practices</h4>
+            <ul>
+                <li>Each text box should serve one purpose (don't mix headline and subheading in one box)</li>
+                <li>Use Canva's "Duplicate" feature to maintain consistent sizing and spacing</li>
+                <li>Apply consistent character spacing and line height</li>
+                <li>Include clear placeholder text (e.g., "[Your Headline Here]")</li>
+                <li>Pre-set text colors so customers don't need to change them individually</li>
+            </ul>
+
+            <h4>Image Placeholder Setup</h4>
+            <ul>
+                <li>Create clear image frames with dimensions noted (e.g., "600x400px")</li>
+                <li>Use Canva's "Image Frame" feature for precision</li>
+                <li>Include a subtle placeholder image or pattern</li>
+                <li>Add dimensions as text below or inside frame</li>
+                <li>Examples: Feature images, product photos, user testimonials</li>
+            </ul>
+
+            <h4>Color Customization</h4>
+            <ul>
+                <li>Apply brand colors consistently across all templates</li>
+                <li>Create a custom color palette in Canva that customers can quickly access</li>
+                <li>Use "Replace All Colors" feature to help customers quickly rebrand</li>
+                <li>Ensure all background colors use the base palette colors</li>
+            </ul>
+
+            <h4>Button/CTA Setup</h4>
+            <ul>
+                <li>Create button templates with editable text fields</li>
+                <li>Use consistent padding and font sizing for all buttons</li>
+                <li>Include examples of different CTA text ("Shop Now," "Learn More," "Register," etc.)</li>
+                <li>Make sure buttons are easily duplicable if customers want multiple CTAs</li>
+            </ul>
+
+            <h4>Accessibility for Beginners</h4>
+            <ul>
+                <li>Avoid requiring customers to change complex layering or grouping</li>
+                <li>Pre-position elements so editing is as simple as clicking and typing</li>
+                <li>Include visual guides (subtle dotted lines) showing safe edit zones</li>
+                <li>Keep font and color options minimal to avoid overwhelm</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 7: QUICK START GUIDE -->
+        <div class="section" id="quick-start">
+            <h2>7. Quick Start Guide</h2>
+
+            <h3>Welcome to Your Canva Template Pack!</h3>
+            <p>This guide will help you create professional social media content in minutes. No design experience needed.</p>
+
+            <h3>Step 1: Access Your Templates</h3>
+            <ol>
+                <li>Open the Canva Template Link provided in your delivery email</li>
+                <li>Log into your Canva account (or create one free at canva.com)</li>
+                <li>You'll see all 30 templates organized by category</li>
+            </ol>
+
+            <h3>Step 2: Make a Copy (Important!)</h3>
+            <ol>
+                <li>Do NOT edit the original template</li>
+                <li>Click the three-dot menu (⋯) in the top-right corner</li>
+                <li>Select "Make a copy"</li>
+                <li>You now have your own editable version</li>
+            </ol>
+
+            <h3>Step 3: Edit Text</h3>
+            <ol>
+                <li>Click on any text to edit it</li>
+                <li>Replace placeholder text with your own content</li>
+                <li>Highlight text to change font, size, color, or alignment</li>
+                <li>Tip: Press Ctrl+A (Cmd+A on Mac) to select all text in a box</li>
+            </ol>
+
+            <h3>Step 4: Replace Images</h3>
+            <ol>
+                <li>Click on the image placeholder</li>
+                <li>Click "Replace image" or upload from your computer</li>
+                <li>Choose from Canva's free stock photos or upload your own</li>
+                <li>Use Canva's crop and zoom tools to position the image</li>
+                <li>Recommended formats: JPG, PNG (max 5MB)</li>
+            </ol>
+
+            <h3>Step 5: Change Colors</h3>
+            <ol>
+                <li>Click on any colored element (background, shape, button)</li>
+                <li>In the right panel, click the color swatch</li>
+                <li>Choose a new color from the picker</li>
+                <li>To change all instances of one color: select the element, then click "Replace color"</li>
+            </ol>
+
+            <h3>Step 6: Upload Your Logo</h3>
+            <ol>
+                <li>Click "Uploads" in the left toolbar</li>
+                <li>Click "Upload files" and choose your logo</li>
+                <li>Drag and drop your logo into the template</li>
+                <li>Resize and position as needed</li>
+                <li>Use PNG with transparent background for best results</li>
+            </ol>
+
+            <h3>Step 7: Export Your Design</h3>
+            <ol>
+                <li>Click the blue "Download" button in the top-right corner</li>
+                <li>Choose your file format:
+                    <ul>
+                        <li><strong>PNG:</strong> For images (Instagram, Facebook, Stories)</li>
+                        <li><strong>JPG:</strong> For smaller file size</li>
+                        <li><strong>MP4:</strong> For animated exports</li>
+                    </ul>
+                </li>
+                <li>Click "Download"</li>
+            </ol>
+
+            <h3>Social Media Dimensions (Recommended Sizes)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Platform</th>
+                        <th>Post Type</th>
+                        <th>Dimensions</th>
+                        <th>File Format</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Instagram</td>
+                        <td>Feed Post</td>
+                        <td>1080 x 1080px</td>
+                        <td>JPG/PNG</td>
+                    </tr>
+                    <tr>
+                        <td>Instagram</td>
+                        <td>Carousel</td>
+                        <td>1080 x 1350px</td>
+                        <td>JPG/PNG</td>
+                    </tr>
+                    <tr>
+                        <td>Instagram</td>
+                        <td>Story</td>
+                        <td>1080 x 1920px</td>
+                        <td>JPG/PNG</td>
+                    </tr>
+                    <tr>
+                        <td>Facebook</td>
+                        <td>Feed Post</td>
+                        <td>1200 x 628px</td>
+                        <td>JPG/PNG</td>
+                    </tr>
+                    <tr>
+                        <td>LinkedIn</td>
+                        <td>Post</td>
+                        <td>1200 x 627px</td>
+                        <td>JPG/PNG</td>
+                    </tr>
+                    <tr>
+                        <td>Pinterest</td>
+                        <td>Pin</td>
+                        <td>1000 x 1500px</td>
+                        <td>JPG/PNG</td>
+                    </tr>
+                    <tr>
+                        <td>TikTok</td>
+                        <td>Video Cover</td>
+                        <td>1080 x 1920px</td>
+                        <td>JPG/PNG</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Image Format Recommendations</h3>
+            <ul>
+                <li><strong>PNG:</strong> Best for images with transparent backgrounds (logos, graphics)</li>
+                <li><strong>JPG:</strong> Best for photographs (smaller file size, faster uploading)</li>
+                <li><strong>Max File Size:</strong> 5MB per image</li>
+                <li><strong>Resolution:</strong> At least 1000x1000px for quality</li>
+            </ul>
+
+            <h3>Pro Tips for Canva</h3>
+            <ul>
+                <li>💡 <strong>Duplicate Slides:</strong> Copy an entire carousel slide by selecting it and pressing Ctrl+D</li>
+                <li>💡 <strong>Undo/Redo:</strong> Ctrl+Z to undo, Ctrl+Y to redo</li>
+                <li>💡 <strong>Align Elements:</strong> Select multiple elements and use the alignment tools</li>
+                <li>💡 <strong>Smart Guides:</strong> Canva shows alignment guides when moving elements</li>
+                <li>💡 <strong>Search Canva Stock:</strong> Free stock photos, icons, and graphics</li>
+                <li>💡 <strong>Brand Kit:</strong> Upload colors and fonts once, use everywhere</li>
+                <li>💡 <strong>Mobile Preview:</strong> Always check how it looks on mobile before posting</li>
+                <li>💡 <strong>Save Regularly:</strong> Click the back arrow to auto-save your changes</li>
+            </ul>
+
+            <h3>Common Issues & Fixes</h3>
+            <ul>
+                <li><strong>Text looks different:</strong> Check if the font is installed. If not, Canva will substitute automatically.</li>
+                <li><strong>Image won't fit:</strong> Click the image and use the crop and zoom tools to adjust</li>
+                <li><strong>Colors don't match:</strong> Make sure you're using the exact hex color (#) or selecting from the brand palette</li>
+                <li><strong>Element disappeared:</strong> Check if it's behind another element or hidden on a layer</li>
+            </ul>
+
+            <h3>Need Canva Pro?</h3>
+            <p>Every template in this pack is built entirely with <strong>free Canva</strong> features — no paid subscription required to use, edit, or export any of them. Canva also sells an optional Pro upgrade with extra storage and premium content, but check canva.com directly for current plans and pricing, since Canva changes these periodically.</p>
+        </div>
+
+        <!-- SECTION 8: BONUS CONTENT -->
+        <div class="section" id="bonus">
+            <h2>8. Bonus Content (Premium Add-Ons)</h2>
+
+            <h3>Bonus 1: 30 Social Media Caption Starters</h3>
+            <p>Ready-to-use caption frameworks to pair with your templates. Copy, edit, and post immediately.</p>
+
+            <h4>Sample Captions by Category</h4>
+
+            <h5>Inspirational/Motivational (5)</h5>
+            <ol>
+                <li>"This mindset shift changed everything for me. Here's what I learned..."</li>
+                <li>"You don't need permission to be extraordinary. What's holding you back?"</li>
+                <li>"Small progress is still progress. Here's how [I/you] can..."</li>
+                <li>"The hard part isn't knowing what to do. It's actually doing it. Let me show you how..."</li>
+                <li>"Your biggest regrets will come from chances you didn't take. So why not try..."</li>
+            </ol>
+
+            <h5>Educational/Tips (5)</h5>
+            <ol>
+                <li>"Most people in [your industry] skip this step. Here's why it actually matters..."</li>
+                <li>"Save this for later. You'll need it."</li>
+                <li>"Stop wasting time on [common mistake]. Here's what works instead..."</li>
+                <li>"The #1 thing I wish I knew before starting: [insight]..."</li>
+                <li>"These 3 things will change your [business/life/skills]..."</li>
+            </ol>
+
+            <h5>Engagement Posts (5)</h5>
+            <ol>
+                <li>"Hot take: [opinion]. What do you think?"</li>
+                <li>"This or that? Comment below and let me know your preference..."</li>
+                <li>"I'm genuinely curious: which one resonates with you?"</li>
+                <li>"Tag someone who needs to see this."</li>
+                <li>"The answers might surprise you. Here's my take..."</li>
+            </ol>
+
+            <h5>Promotional (5)</h5>
+            <ol>
+                <li>"We just launched something special. [Link in bio] to [action]"</li>
+                <li>"Limited spots available. If you're serious about [goal], this is for you."</li>
+                <li>"Early birds get [benefit]. Here's how to get access first..."</li>
+                <li>"This sold out in [timeframe] last time. Here's the link before it's gone..."</li>
+                <li>"Only [X] left. If you've been thinking about [offer], now's the time."</li>
+            </ol>
+
+            <h5>Story-Driven (5)</h5>
+            <ol>
+                <li>"This is how I [accomplished something]. It wasn't easy, but here's..."</li>
+                <li>"I made every mistake in the book. Now I help others avoid them. Swipe for..."</li>
+                <li>"My biggest failure taught me [lesson]. Here's the full story..."</li>
+                <li>"Real talk: [vulnerability]. Here's what I learned..."</li>
+                <li>"This didn't work at first. Then I tried [approach] and everything changed..."</li>
+            </ol>
+
+            <h5>Community-Building (5)</h5>
+            <ol>
+                <li>"Shoutout to [person/team]. They're doing [specific thing] and I'm impressed..."</li>
+                <li>"Our community is growing and I'm grateful for every single one of you..."</li>
+                <li>"Results from our [program/challenge]: [metric]. This is what happens when..."</li>
+                <li>"Thank you for [specific support]. This wouldn't be possible without..."</li>
+                <li>"New member of our [community/team]! Excited to have you here..."</li>
+            </ol>
+
+            <h5>Value-Driven Content (5)</h5>
+            <ol>
+                <li>"Giving away [free resource] because I believe in..."</li>
+                <li>"What would you do with [time/money/resource]? Here's my take..."</li>
+                <li>"The biggest investment I made in myself was [specific action]. And it..."</li>
+                <li>"Free download inside: [resource]. No email required. Just [instruction]..."</li>
+                <li>"This is the only [tool/method/approach] you actually need..."</li>
+            </ol>
+
+            <h3>Bonus 2: 30 CTA (Call-to-Action) Ideas</h3>
+            <p>Varied CTAs for different offers, platforms, and customer types.</p>
+
+            <h4>CTA Ideas by Type</h4>
+
+            <h5>Direct Sales CTAs (5)</h5>
+            <ol>
+                <li>Shop Now</li>
+                <li>Get Yours Today</li>
+                <li>Claim Your Copy</li>
+                <li>Buy Before It's Gone</li>
+                <li>Order Yours</li>
+            </ol>
+
+            <h5>Educational CTAs (5)</h5>
+            <ol>
+                <li>Learn More</li>
+                <li>Download Free Guide</li>
+                <li>Watch the Tutorial</li>
+                <li>Read the Full Article</li>
+                <li>Explore the Course</li>
+            </ol>
+
+            <h5>Community CTAs (5)</h5>
+            <ol>
+                <li>Join the Community</li>
+                <li>Tag a Friend</li>
+                <li>Share This</li>
+                <li>Comment Your Answer</li>
+                <li>React Below</li>
+            </ol>
+
+            <h5>Engagement CTAs (5)</h5>
+            <ol>
+                <li>Double-tap if you agree</li>
+                <li>Tell me in the comments</li>
+                <li>Which one are you?</li>
+                <li>Vote in our poll</li>
+                <li>Answer the question</li>
+            </ol>
+
+            <h5>Email/Lead Gen CTAs (5)</h5>
+            <ol>
+                <li>Get on the Waitlist</li>
+                <li>Sign Up for Updates</li>
+                <li>Grab Your Spot</li>
+                <li>Reserve Your Place</li>
+                <li>Subscribe Below</li>
+            </ol>
+
+            <h5>Service/Booking CTAs (5)</h5>
+            <ol>
+                <li>Book a Consultation</li>
+                <li>Schedule Your Demo</li>
+                <li>Apply Now</li>
+                <li>Get Started Today</li>
+                <li>Request an Invite</li>
+            </ol>
+
+            <h3>Bonus 3: 30 Content Ideas</h3>
+            <p>A month-long content calendar to keep your posting consistent.</p>
+
+            <h4>Content Ideas by Theme</h4>
+
+            <h5>Week 1: Value & Education</h5>
+            <ol>
+                <li>Share your top 5 tips for [topic your audience cares about]</li>
+                <li>Post a "common mistakes" carousel on [specific problem]</li>
+                <li>Share a case study or before/after transformation</li>
+                <li>Create a how-to/tutorial post for something beginner-friendly</li>
+                <li>Share a free resource or downloadable guide</li>
+            </ol>
+
+            <h5>Week 2: Engagement & Community</h5>
+            <ol>
+                <li>Ask your audience "this or that" question</li>
+                <li>Share a bold opinion or hot take on your industry</li>
+                <li>Post a testimonial or success story from a customer</li>
+                <li>Share a "myth vs. fact" post debunking common misconceptions</li>
+                <li>Ask an open-ended question to spark conversation</li>
+            </ol>
+
+            <h5>Week 3: Behind-the-Scenes & Personal</h5>
+            <ol>
+                <li>Share your day-in-the-life or work day routine</li>
+                <li>Post a vulnerability post or lesson from a failure</li>
+                <li>Share what you're learning right now</li>
+                <li>Post a behind-the-scenes moment from your business</li>
+                <li>Share a personal win or celebration</li>
+            </ol>
+
+            <h5>Week 4: Promotion & Offers</h5>
+            <ol>
+                <li>Announce a new product, service, or offer</li>
+                <li>Share a limited-time deal or promotion</li>
+                <li>Create urgency with "last chance" or countdown content</li>
+                <li>Highlight a popular product with fresh styling</li>
+                <li>Share a customer testimonial paired with a CTA</li>
+            </ol>
+
+            <h3>Bonus 4: Mini Brand Style Guide</h3>
+            <p>A one-page guide to help customers (and their teams) maintain consistency.</p>
+
+            <h4>Brand Guide Template</h4>
+
+            <h5>Brand Voice & Tone</h5>
+            <p>Describe how your brand should sound. Examples:</p>
+            <ul>
+                <li><strong>Professional but friendly:</strong> Use "you" and "we" to build connection</li>
+                <li><strong>Educational:</strong> Teach something valuable in every post</li>
+                <li><strong>Inspirational:</strong> Help your audience believe they can achieve goals</li>
+                <li><strong>Authentic:</strong> Share real stories and lessons learned</li>
+            </ul>
+
+            <h5>Logo Usage</h5>
+            <ul>
+                <li>Always include your logo on promotional content</li>
+                <li>Never stretch, rotate, or distort the logo</li>
+                <li>Use white logo on dark backgrounds, dark logo on light backgrounds</li>
+                <li>Maintain minimum clear space around the logo</li>
+            </ul>
+
+            <h5>Color Palette</h5>
+            <p>List your brand colors with hex codes and usage instructions</p>
+
+            <h5>Typography</h5>
+            <p>Primary fonts and their uses (headlines, body text, CTAs)</p>
+
+            <h5>Imagery & Photography</h5>
+            <ul>
+                <li>Style: Professional, authentic, lifestyle-focused [etc.]</li>
+                <li>Filters: Warm/cool tones, natural lighting preference</li>
+                <li>People: Always show diverse, inclusive imagery</li>
+                <li>Avoid: Stock photos that look fake or overly polished [customize as needed]</li>
+            </ul>
+
+            <h5>What NOT to Do</h5>
+            <ul>
+                <li>Don't change colors dramatically between posts</li>
+                <li>Don't use more than 3 fonts in a single post</li>
+                <li>Don't mix professional and casual imagery</li>
+                <li>Don't post low-quality or blurry images</li>
+            </ul>
+
+            <h5>Posting Guidelines</h5>
+            <ul>
+                <li><strong>Frequency:</strong> [Recommend 3-5 times per week]</li>
+                <li><strong>Best Times:</strong> [Research audience timezone and habits]</li>
+                <li><strong>Hashtags:</strong> [Provide 10-15 relevant, brand-safe hashtags]</li>
+                <li><strong>Caption Length:</strong> [Short and punchy vs. longer storytelling]</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 9: PRODUCT DELIVERY STRUCTURE -->
+        <div class="section" id="delivery">
+            <h2>9. Product Delivery Structure</h2>
+
+            <h3>How Customers Receive the Product</h3>
+
+            <div class="highlight-box">
+                <h4>📧 Delivery Email Structure</h4>
+                <p>When a customer purchases the template pack, they receive one email containing:</p>
+            </div>
+
+            <h3>01 — Canva Template Link</h3>
+            <p><strong>Delivery Method:</strong> Direct link in email</p>
+            <p><strong>Format:</strong></p>
+            <blockquote style="border-left: 4px solid #E8B4A8; padding-left: 20px; margin: 20px 0; font-style: italic;">
+                "Click here to access your Canva Template Pack: [INSERT YOUR CANVA TEMPLATE LINK HERE]"
+            </blockquote>
+            <p><strong>Instructions:</strong></p>
+            <ul>
+                <li>Click the link to open the template gallery</li>
+                <li>Log in or create a free Canva account</li>
+                <li>Make a copy of the templates to start editing</li>
+                <li>All 30 templates are ready to use immediately</li>
+            </ul>
+
+            <h3>02 — Quick Start Guide</h3>
+            <p><strong>Delivery Method:</strong> PDF attachment or linked document</p>
+            <p><strong>Contents:</strong></p>
+            <ul>
+                <li>Welcome message</li>
+                <li>7-step tutorial to create your first post</li>
+                <li>Social media dimension chart</li>
+                <li>Image format recommendations</li>
+                <li>Canva Pro tips</li>
+                <li>Troubleshooting FAQ</li>
+            </ul>
+
+            <h3>03 — Caption Starters (PDF)</h3>
+            <p><strong>Delivery Method:</strong> Downloadable PDF</p>
+            <p><strong>Contents:</strong></p>
+            <ul>
+                <li>30 ready-to-use social media captions</li>
+                <li>Organized by category and use case</li>
+                <li>Copy-paste format for immediate use</li>
+                <li>Tips for personalizing captions</li>
+            </ul>
+
+            <h3>04 — CTA Swipe File (PDF)</h3>
+            <p><strong>Delivery Method:</strong> Downloadable PDF</p>
+            <p><strong>Contents:</strong></p>
+            <ul>
+                <li>30 call-to-action phrases</li>
+                <li>Organized by type (sales, engagement, education, etc.)</li>
+                <li>Easy reference for template editing</li>
+            </ul>
+
+            <h3>05 — Content Ideas (PDF)</h3>
+            <p><strong>Delivery Method:</strong> Downloadable PDF</p>
+            <p><strong>Contents:</strong></p>
+            <ul>
+                <li>30-day content calendar ideas</li>
+                <li>Post types matched to specific templates</li>
+                <li>Posting strategy recommendations</li>
+            </ul>
+
+            <h3>06 — Mini Brand Guide (PDF)</h3>
+            <p><strong>Delivery Method:</strong> Downloadable PDF</p>
+            <p><strong>Contents:</strong></p>
+            <ul>
+                <li>Color palette with hex codes</li>
+                <li>Font recommendations</li>
+                <li>Brand voice guidelines</li>
+                <li>Photography style guide</li>
+                <li>Logo usage instructions</li>
+                <li>Social media posting standards</li>
+            </ul>
+
+            <h3>Delivery Timeline</h3>
+            <ul>
+                <li><strong>Immediate:</strong> Canva Template Link (in email)</li>
+                <li><strong>In Attached Zip File:</strong> All 5 PDF bonus guides</li>
+                <li><strong>Alternative:</strong> All files in a Google Drive folder link</li>
+            </ul>
+
+            <h3>What Customers Can Do Right Away</h3>
+            <ol>
+                <li><strong>Minute 1:</strong> Click link, log into Canva</li>
+                <li><strong>Minute 5:</strong> Make a copy of first template</li>
+                <li><strong>Minute 10:</strong> Edit headline and swap image</li>
+                <li><strong>Minute 15:</strong> Export and post to social media</li>
+            </ol>
+
+            <h3>Support & Guarantees</h3>
+            <ul>
+                <li>Templates are delivered instantly upon purchase</li>
+                <li>Customer support available via email for technical issues</li>
+                <li>30-day money-back guarantee (no questions asked)</li>
+                <li>Free updates if templates are revised</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 10: AQVANI PRODUCT LISTING -->
+        <div class="section" id="aqvani-listing">
+            <h2>10. Aqvani.shop Product Listing</h2>
+
+            <h3>Platform Setup Notes</h3>
+            <ul>
+                <li>Product Type: Digital Product (Instant Download)</li>
+                <li>Product Category: Social Media / Design / Templates</li>
+                <li>License: Personal/Commercial Use (clarify your terms)</li>
+                <li>File Delivery: Instant email delivery after purchase</li>
+            </ul>
+
+            <h3>Key Listing Information</h3>
+            <ul>
+                <li><strong>Product Title:</strong> [See SEO options below]</li>
+                <li><strong>Price:</strong> $9–$25 (recommend starting at $17)</li>
+                <li><strong>Currency:</strong> USD</li>
+                <li><strong>Delivery:</strong> Instant digital download via email</li>
+                <li><strong>File Size:</strong> ZIP file with PDFs + Canva link</li>
+                <li><strong>Refund Policy:</strong> 30-day money-back guarantee</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 11: SEO TITLE OPTIONS -->
+        <div class="section">
+            <h2>11. SEO Product Title Options</h2>
+
+            <p>Choose one and optimize for your store's keyword focus:</p>
+
+            <ol>
+                <li><strong>Canva Template Pack — 30 Editable Social Media Templates</strong>
+                    <ul>
+                        <li>✓ Direct, clear, keyword-rich</li>
+                        <li>✓ Mentions "Canva," "template," "social media"</li>
+                    </ul>
+                </li>
+                <li><strong>30 Professional Social Media Templates for Canva (Done-For-You Designs)</strong>
+                    <ul>
+                        <li>✓ Emphasizes "professional" and "done-for-you"</li>
+                        <li>✓ Appeals to non-designers</li>
+                    </ul>
+                </li>
+                <li><strong>Complete Canva Template Bundle — Instagram, Facebook & Stories (30 Templates)</strong>
+                    <ul>
+                        <li>✓ Platform-specific (better for targeted traffic)</li>
+                        <li>✓ Emphasizes bundle value</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <p><strong>Recommendation:</strong> Use Option 1 for general appeal and SEO strength</p>
+        </div>
+
+        <!-- SECTION 12: PRODUCT DESCRIPTION -->
+        <div class="section" id="benefits">
+            <h2>12. Product Description</h2>
+
+            <h3>Short Description (2–3 sentences)</h3>
+            <p><em>"Stop spending hours on graphic design. Get 30 professional, fully customizable social media templates that you can edit in Canva in minutes. No design experience needed — includes carousels, quotes, stories, and bonus guides to help you post consistently and grow your audience faster."</em></p>
+
+            <h3>Full Product Description</h3>
+
+            <h4>What You Receive</h4>
+            <p>30 professionally designed, ready-to-edit Canva templates organized into three categories:</p>
+            <ul>
+                <li><strong>10 Carousel Templates:</strong> Perfect for educational, how-to, tips, and promotional content</li>
+                <li><strong>10 Quote & Engagement Posts:</strong> Inspirational, questions, this-or-that, and promotional designs</li>
+                <li><strong>10 Story Graphics:</strong> Instagram Stories, announcements, sales, testimonials, and more</li>
+            </ul>
+
+            <h4>Who It's For</h4>
+            <p>This template pack is designed for:</p>
+            <ul>
+                <li>Small business owners who need consistent, professional content</li>
+                <li>Coaches, consultants, and service providers building authority</li>
+                <li>Content creators and influencers saving time on design</li>
+                <li>Freelancers, online sellers, and personal brands</li>
+                <li>Anyone who wants to look professional without hiring a designer</li>
+            </ul>
+
+            <h4>What Problems It Solves</h4>
+            <ul>
+                <li>❌ <strong>Staring at a blank canvas:</strong> Templates give you a starting point</li>
+                <li>❌ <strong>Inconsistent branding:</strong> All templates follow one cohesive design system</li>
+                <li>❌ <strong>No time for design:</strong> Edit text and images in minutes</li>
+                <li>❌ <strong>Expensive designers:</strong> Templates cost less than one hour with a designer</li>
+                <li>❌ <strong>No design skills:</strong> No experience needed — just click, edit, and post</li>
+            </ul>
+
+            <h4>How It Works</h4>
+            <ol>
+                <li><strong>Access instantly:</strong> Get your Canva link immediately after purchase</li>
+                <li><strong>Make a copy:</strong> Never edit the original; work on your own version</li>
+                <li><strong>Edit in Canva:</strong> Change text, colors, images (free Canva account works)</li>
+                <li><strong>Export & post:</strong> Download and share to any social platform</li>
+            </ol>
+
+            <h4>How It Saves You Time</h4>
+            <p>Instead of spending 30–60 minutes designing one post:</p>
+            <ul>
+                <li>Use a template and edit in <strong>5–10 minutes</strong></li>
+                <li>Keep colors and fonts consistent across all posts</li>
+                <li>Build a content calendar with the included 30-day ideas</li>
+                <li>Get bonus captions and CTAs ready to customize</li>
+            </ul>
+
+            <h4>Customization Options</h4>
+            <p>Every template is fully customizable:</p>
+            <ul>
+                <li>✓ Edit all text (headlines, body, CTAs)</li>
+                <li>✓ Swap images with your own photos</li>
+                <li>✓ Change colors to match your brand</li>
+                <li>✓ Upload your logo</li>
+                <li>✓ Adjust fonts and sizing</li>
+                <li>✓ Export as PNG, JPG, or MP4</li>
+            </ul>
+
+            <h4>Why Consistent Branding Matters</h4>
+            <p>Professional brands aren't random. When you use the same colors, fonts, and design style across all posts:</p>
+            <ul>
+                <li>Your audience recognizes your content instantly</li>
+                <li>You look more professional and trustworthy</li>
+                <li>People are more likely to follow and share</li>
+                <li>You build a cohesive brand identity</li>
+            </ul>
+
+            <h4>What's Included</h4>
+            <div class="highlight-box">
+                <ul>
+                    <li>✓ 30 editable Canva templates</li>
+                    <li>✓ 10 carousel templates (3–6 slides each)</li>
+                    <li>✓ 10 quote & engagement post templates</li>
+                    <li>✓ 10 Instagram Story & vertical templates</li>
+                    <li>✓ Quick Start Guide (7-step tutorial)</li>
+                    <li>✓ 30 Social Media Caption Starters</li>
+                    <li>✓ 30 CTA (Call-to-Action) Ideas</li>
+                    <li>✓ 30-Day Content Ideas Calendar</li>
+                    <li>✓ Mini Brand Style Guide</li>
+                    <li>✓ Lifetime access to updates</li>
+                </ul>
+            </div>
+
+            <h4>Compatibility</h4>
+            <ul>
+                <li>✓ Works with <strong>Free Canva</strong> (no Pro subscription needed)</li>
+                <li>✓ Works on <strong>desktop and mobile</strong></li>
+                <li>✓ Works on <strong>Mac and PC</strong></li>
+                <li>✓ All templates use Canva's free fonts and features</li>
+            </ul>
+
+            <h4>Next Steps</h4>
+            <ol>
+                <li>Purchase the template pack (instant delivery)</li>
+                <li>Click the Canva link in your email</li>
+                <li>Choose your first template</li>
+                <li>Make a copy and start editing</li>
+                <li>Export and post to social media</li>
+            </ol>
+        </div>
+
+        <!-- SECTION 13: KEY BENEFITS -->
+        <div class="section">
+            <h2>13. Key Benefits</h2>
+
+            <div class="benefit-list">
+                <div class="benefit-item">
+                    <strong>⏱️ Save Hours Every Week</strong>
+                    <p>Design professional posts in 5–10 minutes instead of 30–60 minutes. Spend more time on strategy and less time on design.</p>
+                </div>
+                <div class="benefit-item">
+                    <strong>🎨 Look Professional Instantly</strong>
+                    <p>No design experience needed. Every template is professionally designed and ready to customize. Your audience will think you hired a designer.</p>
+                </div>
+                <div class="benefit-item">
+                    <strong>🎯 Stay Brand Consistent</strong>
+                    <p>All 30 templates follow one cohesive design system. Your audience recognizes your content across all platforms.</p>
+                </div>
+                <div class="benefit-item">
+                    <strong>📱 Post More Frequently</strong>
+                    <p>With done-for-you templates, you can post daily, 3x per week, or whatever schedule works. No more excuses to skip posting.</p>
+                </div>
+                <div class="benefit-item">
+                    <strong>💰 Cost-Effective Alternative</strong>
+                    <p>One-time investment (less than hiring a designer for 1 hour). Get 30 templates you can use forever.</p>
+                </div>
+                <div class="benefit-item">
+                    <strong>🚀 Grow Your Audience Faster</strong>
+                    <p>Consistent, professional content attracts more followers, engagement, and customer inquiries.</p>
+                </div>
+                <div class="benefit-item">
+                    <strong>✏️ Fully Customizable</strong>
+                    <p>Edit text, images, colors, fonts, and more. Make them 100% yours without touching code or design software.</p>
+                </div>
+                <div class="benefit-item">
+                    <strong>📦 Bonus Content Included</strong>
+                    <p>Captions, CTAs, content ideas, and brand guide — everything you need to post strategically and grow faster.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 14: FAQs -->
+        <div class="section" id="faqs">
+            <h2>14. Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">❓ Do I need a Canva Pro account to use these templates?</div>
+                <div class="faq-answer">No. Every template is built entirely with free Canva features, so a free account is all you need to edit, customize, and export them. Canva does offer an optional paid plan with extra storage and premium content, but check canva.com for current pricing and features rather than relying on a number here — Canva updates its plans from time to time.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">❓ Can I edit these templates on my phone/tablet?</div>
+                <div class="faq-answer">Yes! Canva works on mobile, tablet, and desktop. You can edit templates anywhere using the Canva app or web browser. Some features are limited on mobile, so desktop editing may be better for detailed work.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">❓ Can I change the colors and fonts to match my brand?</div>
+                <div class="faq-answer">Absolutely. Every template is fully customizable. Change colors, swap fonts, add your logo, and edit text. Make them 100% yours without any design knowledge.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">❓ How long will I have access to the templates?</div>
+                <div class="faq-answer">Forever! You get lifetime access to your templates. You can use them immediately and continue using them indefinitely. You'll also get free access to any future updates.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">❓ Can I use these templates for client work or my agency?</div>
+                <div class="faq-answer">Yes. Your license covers using the finished, edited designs for your own brand and for paying clients — freelancers, consultants, and small agencies are welcome to use them in client work. The one thing it doesn't cover is reselling or redistributing the templates themselves as a product. If you need licensing for a large team, email us first and we'll confirm.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">❓ What if I need help editing a template?</div>
+                <div class="faq-answer">The Quick Start Guide covers everything from text editing to image swapping. We also include troubleshooting tips. If you're stuck, email our support team and we'll help within 24 hours.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">❓ Can I export templates in different formats (PNG, JPG, MP4, etc.)?</div>
+                <div class="faq-answer">Yes! Canva allows you to export as PNG, JPG, PDF, and MP4 (if animated). Each platform has recommended dimensions — we include those in the Quick Start Guide.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">❓ What if I'm not happy with the templates?</div>
+                <div class="faq-answer">We offer a 30-day money-back guarantee, no questions asked. If the templates aren't right for you, we'll refund your purchase in full. Your satisfaction is guaranteed.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">❓ Can I duplicate templates to create more variations?</div>
+                <div class="faq-answer">Yes! You can duplicate any template and customize it to create new variations. Canva makes this easy with the "Duplicate" button.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">❓ Do the templates include licensed stock images?</div>
+                <div class="faq-answer">Templates include placeholder spaces for images. You can use Canva's free stock photos, your own images, or upload premium images from other sources. Just make sure you have the rights to use any images you add.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">❓ Will these templates work in 2025 and beyond?</div>
+                <div class="faq-answer">Yes! Canva updates regularly, and our templates are built on Canva's core features that remain stable. We'll push any necessary updates to ensure compatibility.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">❓ Can I share the templates with my team?</div>
+                <div class="faq-answer">Personal licenses are for individual use. For team access, you'll need to purchase additional licenses or explore our team licensing option. Contact support for team pricing.</div>
+            </div>
+        </div>
+
+        <!-- SECTION 15: MARKETING HOOKS -->
+        <div class="section">
+            <h2>15. Marketing Hooks & Taglines</h2>
+
+            <h3>Short, Punchy Marketing Phrases</h3>
+
+            <div class="marketing-hooks">
+                <div class="hook">30 Templates. One Consistent Brand. Less Design Stress.</div>
+                <div class="hook">Create. Customize. Post. (In minutes, not hours.)</div>
+                <div class="hook">Professional Content Without Starting From Scratch.</div>
+                <div class="hook">Stop Staring at Blank Canvases. Start Posting Today.</div>
+                <div class="hook">Design Like You Hired a Pro (Without Paying Pro Prices)</div>
+                <div class="hook">Your Done-For-You Social Media Solution.</div>
+                <div class="hook">Consistent Branding. Beautiful Posts. Zero Design Experience Needed.</div>
+                <div class="hook">The Instagram Feed You Deserve (Without the Designer Budget)</div>
+                <div class="hook">30 Templates to Build Your Audience, Not Your Stress.</div>
+                <div class="hook">Professional Templates. Personal Touch. Infinite Possibility.</div>
+                <div class="hook">More Posts. Better Branding. Less Procrastination.</div>
+            </div>
+        </div>
+
+        <!-- SECTION 16: SOCIAL MEDIA PROMOTION COPY -->
+        <div class="section" id="marketing">
+            <h2>16. Social Media Promotion Copy</h2>
+
+            <h3>Instagram Captions</h3>
+
+            <div class="social-post">
+                <div class="social-platform">Instagram Caption #1</div>
+                <p>I used to spend close to two hours every Sunday just designing posts for the week. Two hours, before I'd even written a caption.
+
+Eventually I built 30 templates instead of starting from scratch each time — same fonts, same colors, same layout system. I just swap the words and the photo now.
+
+That Sunday ritual takes about twenty minutes these days.
+
+If your feed looks different every week because design keeps eating your time, these might help. Link in bio.</p>
+            </div>
+
+            <div class="social-post">
+                <div class="social-platform">Instagram Caption #2</div>
+                <p>Small business budget update: still can't justify hiring a designer, still need my Instagram to look like I have one.
+
+So I built a set of 30 Canva templates that all share one color palette and two fonts. Every post — carousel, quote, story — ends up looking like it belongs to the same brand. Because it does.
+
+Grabbed the link in my bio if you're in the same boat.</p>
+            </div>
+
+            <div class="social-post">
+                <div class="social-platform">Instagram Caption #3</div>
+                <p>Question I get asked a lot: how do you keep your posts looking consistent?
+
+Honestly, I stopped designing from scratch. I built 30 templates once, and now every post pulls from the same system — same colors, same type, same structure.
+
+It's less "creative burst" and more "fill in the blanks," which is exactly why it works. Templates are up — link in bio.</p>
+            </div>
+
+            <div class="social-post">
+                <div class="social-platform">Instagram Caption #4</div>
+                <p>I used to skip posting entirely on weeks I didn't feel inspired. Turns out design was the actual bottleneck, not ideas.
+
+These 30 templates fixed that. Pick one, drop in your text and photo, done. My low-motivation weeks look identical to my good weeks now.
+
+Link in bio if you want the same fix.</p>
+            </div>
+
+            <div class="social-post">
+                <div class="social-platform">Instagram Caption #5</div>
+                <p>What actually stops most people from posting consistently isn't a shortage of ideas — it's not having a fast way to make the post look decent.
+
+I put together 30 templates (carousels, quote posts, stories) built around one color and font system, so everything matches without you having to think about it.
+
+Details in my bio.</p>
+            </div>
+
+            <h3>Facebook Promotional Posts</h3>
+
+            <div class="social-post">
+                <div class="social-platform">Facebook Post #1</div>
+                <p>I put off building a proper template system for way longer than I should have — kept telling myself I'd get more efficient "next time."
+
+Eventually I sat down and built 30 templates instead: 10 carousels, 10 quote/engagement posts, 10 Instagram stories, all sharing one color palette and two fonts.
+
+Editing a post now takes minutes instead of most of an evening. I packaged the whole thing up — the 30 Canva templates plus a quick-start guide, a caption list, CTA ideas, and a short brand guide — in case it saves someone else the same time.
+
+[LINK]</p>
+            </div>
+
+            <div class="social-post">
+                <div class="social-platform">Facebook Post #2</div>
+                <p>If your last ten posts don't look like they came from the same account, you're not alone — that used to be me too.
+
+The fix wasn't more creativity. It was picking one set of colors and fonts and sticking to them across every template. That's essentially what this pack is: 30 templates built on one design system, so whatever you post ends up looking like it belongs together.
+
+Included: 10 carousel templates, 10 quote/engagement templates, 10 story graphics, plus a caption list, CTA ideas, a 30-day content calendar, and a short brand guide.
+
+[LINK]</p>
+            </div>
+
+            <div class="social-post">
+                <div class="social-platform">Facebook Post #3</div>
+                <p>For anyone running a coaching or consulting business on a one-person budget:
+
+Your social media does a lot of the trust-building work before someone ever books a call with you, so it's worth it looking intentional.
+
+I built 30 Canva templates around a single color and type system so every post — a tip carousel, a quick quote, whatever — reads as the same brand. No design background required, and the free version of Canva is enough to use them.
+
+[LINK]</p>
+            </div>
+
+            <div class="social-post">
+                <div class="social-platform">Facebook Post #4</div>
+                <p>Rough math: a freelance designer typically charges somewhere between $50 and $150 per social post. Post three times a week and that adds up fast.
+
+This pack won't replace a designer for everything, but for regular week-to-week content it gets you most of the way there — 30 templates built on one system, edited in Canva in a few minutes each.
+
+[LINK]</p>
+            </div>
+
+            <div class="social-post">
+                <div class="social-platform">Facebook Post #5</div>
+                <p>Noticed some accounts post way more often than you and wondered how? Usually it's not that they have more time — design just isn't the bottleneck for them anymore.
+
+That's the idea behind this template pack: take the design step out of the equation so posting is a five-minute task instead of an hour-long one. 30 templates, all built to work together.
+
+[LINK]</p>
+            </div>
+
+            <h3>Pinterest Descriptions</h3>
+
+            <div class="social-post">
+                <div class="social-platform">Pinterest Description #1</div>
+                <p>30 editable Canva templates for social media — carousels, quote posts, and Instagram Stories built on one cohesive design system. No design experience needed.</p>
+            </div>
+
+            <div class="social-post">
+                <div class="social-platform">Pinterest Description #2</div>
+                <p>A done-for-you Canva template pack made for small business owners. Swap in your own text, photos, and colors, and your feed looks consistent overnight.</p>
+            </div>
+
+            <div class="social-post">
+                <div class="social-platform">Pinterest Description #3</div>
+                <p>Looking for professional Instagram carousel templates? This pack includes 30 Canva designs — carousels, quotes, and stories — plus caption and content-idea guides.</p>
+            </div>
+
+            <div class="social-post">
+                <div class="social-platform">Pinterest Description #4</div>
+                <p>Canva templates for coaches and entrepreneurs who want their social media to look put-together without hiring a designer.</p>
+            </div>
+
+            <div class="social-post">
+                <div class="social-platform">Pinterest Description #5</div>
+                <p>A 30-template Canva bundle for content creators: carousels, quote graphics, and story templates that all share one consistent color and font system.</p>
+            </div>
+
+            <h3>LinkedIn Promotional Posts</h3>
+
+            <div class="social-post">
+                <div class="social-platform">LinkedIn Post #1</div>
+                <p>I tracked my hours last month and found I'd spent close to 40 of them on social graphics alone — most of it re-solving the same layout problems over and over.
+
+So I built 30 templates instead of one-off designs: same colors, same fonts, same structure, different content each time. Editing one now takes minutes.
+
+If design is quietly eating your week too, I put the templates up here: [LINK]</p>
+            </div>
+
+            <div class="social-post">
+                <div class="social-platform">LinkedIn Post #2</div>
+                <p>Accounts that look consistent aren't necessarily more creative — they're usually just reusing a system. Same palette, same type, same layout logic, different message each time.
+
+I built a 30-template Canva pack around that idea, mainly so I'd stop reinventing the wheel every time I needed a post. Sharing it here in case it saves someone else the same time: [LINK]</p>
+            </div>
+
+            <div class="social-post">
+                <div class="social-platform">LinkedIn Post #3</div>
+                <p>Your LinkedIn posts are often someone's first real impression of how you work, so it's worth them looking considered rather than rushed.
+
+I put together 30 templates — carousels, quote posts, and story graphics — all built on one color and type system, so everything you post looks intentional without a design background. [LINK]</p>
+            </div>
+        </div>
+
+        <!-- SECTION 17: QUALITY CHECKLIST -->
+        <div class="section" id="quality-check">
+            <h2>17. Final Quality Checklist</h2>
+
+            <p>Before launching your product, verify every template meets these standards:</p>
+
+            <h3>Design Quality</h3>
+            <div class="quality-checklist">
+                <div class="checklist-item">All templates use consistent color palette (#F7F5F3, #E8DDD3, #2C3E50, #E8B4A8, #D97660, #B5A39F)</div>
+                <div class="checklist-item">Typography is consistent (max 3 fonts per template)</div>
+                <div class="checklist-item">Whitespace is generous and intentional (no cluttered layouts)</div>
+                <div class="checklist-item">Alignment is perfect (all elements snap to grid)</div>
+                <div class="checklist-item">Spacing is consistent (standard margins throughout)</div>
+                <div class="checklist-item">Visual hierarchy is clear (headlines, subheadings, body text are distinct)</div>
+                <div class="checklist-item">No cheap gradients or overly processed effects</div>
+                <div class="checklist-item">Designs look modern and timeless (not trendy + dated in 3 months)</div>
+            </div>
+
+            <h3>Readability</h3>
+            <div class="quality-checklist">
+                <div class="checklist-item">Text is readable at small sizes (min 14px body text)</div>
+                <div class="checklist-item">Color contrast meets accessibility standards (dark text on light, light on dark)</div>
+                <div class="checklist-item">Line length is comfortable (50–70 characters per line)</div>
+                <div class="checklist-item">Line spacing is generous (1.5–1.8 line height)</div>
+                <div class="checklist-item">All templates are readable on mobile (60% zoom test)</div>
+                <div class="checklist-item">No tiny text or hard-to-read font choices</div>
+            </div>
+
+            <h3>Consistency</h3>
+            <div class="quality-checklist">
+                <div class="checklist-item">All 30 templates feel like they belong together</div>
+                <div class="checklist-item">Same fonts used across all templates</div>
+                <div class="checklist-item">Same color system applied consistently</div>
+                <div class="checklist-item">Same margin/padding standards throughout</div>
+                <div class="checklist-item">Same level of design quality (none feel "cheap" or hastily made)</div>
+                <div class="checklist-item">CTA buttons have consistent styling</div>
+            </div>
+
+            <h3>Editability</h3>
+            <div class="quality-checklist">
+                <div class="checklist-item">Text placeholders are labeled clearly ("[Your Headline Here]")</div>
+                <div class="checklist-item">Image spaces are clearly defined with dimensions noted</div>
+                <div class="checklist-item">Elements are grouped logically (not random scattered layers)</div>
+                <div class="checklist-item">Decorative elements are unlocked for customer customization</div>
+                <div class="checklist-item">Background elements are locked to prevent accidents</div>
+                <div class="checklist-item">Beginners can edit without getting confused or breaking layout</div>
+                <div class="checklist-item">No overly complicated layer structures</div>
+            </div>
+
+            <h3>Mobile Optimization</h3>
+            <div class="quality-checklist">
+                <div class="checklist-item">Instagram Story templates are 1080x1920px or 1080x1350px</div>
+                <div class="checklist-item">All text scales properly on mobile</div>
+                <div class="checklist-item">Images don't get cut off or distorted on small screens</div>
+                <div class="checklist-item">CTAs are large enough to tap easily</div>
+                <div class="checklist-item">No text that's unreadable without zooming</div>
+            </div>
+
+            <h3>Professionalism</h3>
+            <div class="quality-checklist">
+                <div class="checklist-item">Designs look like something a professional designer would sell</div>
+                <div class="checklist-item">No placeholder images that look cheap or AI-generated</div>
+                <div class="checklist-item">No obvious design clichés or generic templates</div>
+                <div class="checklist-item">No spelling or grammatical errors in example text</div>
+                <div class="checklist-item">Color choices are elegant and sophisticated (not loud or garish)</div>
+                <div class="checklist-item">Overall aesthetic matches "modern + elegant + premium"</div>
+            </div>
+
+            <h3>Variety & Usefulness</h3>
+            <div class="quality-checklist">
+                <div class="checklist-item">30 templates cover diverse use cases (education, engagement, promotion, etc.)</div>
+                <div class="checklist-item">Templates are practical for real-world use (not just pretty decorations)</div>
+                <div class="checklist-item">Carousel templates have appropriate number of slides</div>
+                <div class="checklist-item">Quote templates work for different industry/audience types</div>
+                <div class="checklist-item">Story templates are distinct and serve different purposes</div>
+                <div class="checklist-item">No obvious repetition or templates that feel redundant</div>
+            </div>
+
+            <h3>Documentation & Support</h3>
+            <div class="quality-checklist">
+                <div class="checklist-item">Quick Start Guide is clear and beginner-friendly</div>
+                <div class="checklist-item">All PDFs are professionally formatted (not just plain text)</div>
+                <div class="checklist-item">Captions are actually usable (not just filler)</div>
+                <div class="checklist-item">Content ideas align with the 30 templates provided</div>
+                <div class="checklist-item">Brand guide is practical and specific</div>
+                <div class="checklist-item">No errors or typos in any documentation</div>
+            </div>
+
+            <h3>Value Perception</h3>
+            <div class="quality-checklist">
+                <div class="checklist-item">Product feels worth $9–$25 (or your chosen price)</div>
+                <div class="checklist-item">Bonus content adds meaningful value (not just extra PDFs)</div>
+                <div class="checklist-item">Templates save customers real time (5–10 min vs 30–60 min per post)</div>
+                <div class="checklist-item">Professional appearance justifies premium pricing</div>
+                <div class="checklist-item">Customers will feel they made a smart investment</div>
+            </div>
+        </div>
+
+        <!-- CLOSING SECTION -->
+        <div class="section" style="border-top: 2px solid var(--border); padding-top: 40px; margin-top: 60px;">
+            <h2>Ready to Launch?</h2>
+
+            <p style="font-size: 1.1em; line-height: 1.8;">You now have a complete product package ready to sell. This documentation covers every angle: template design, customer experience, marketing messaging, and quality standards.</p>
+
+            <h3>Next Steps</h3>
+            <ol>
+                <li><strong>Finalize Your Templates:</strong> Create the 30 templates in Canva using this design system</li>
+                <li><strong>Create Bonus PDFs:</strong> Format and design the 5 bonus guides</li>
+                <li><strong>Build Your Canva Template Link:</strong> Organize all 30 templates in a shared Canva collection</li>
+                <li><strong>Set Up Aqvani Listing:</strong> Use the provided copy and images to create your product page</li>
+                <li><strong>Quality Check:</strong> Go through every template using the checklist above</li>
+                <li><strong>Launch & Promote:</strong> Use the social media copy to market your product</li>
+                <li><strong>Set Up Support:</strong> Make sure you can respond to customer questions</li>
+            </ol>
+
+            <h3>Success Metrics</h3>
+            <p>Track these to measure your product's success:</p>
+            <ul>
+                <li>Customer reviews and ratings (aim for 4.8+ stars)</li>
+                <li>Number of templates each customer uses (ideally 10+)</li>
+                <li>Customer feedback on ease of use</li>
+                <li>Repeat customer rate (bonus: create more packs)</li>
+                <li>Revenue and profit margin</li>
+            </ul>
+
+            <div class="highlight-box">
+                <h3>Final Reminder</h3>
+                <p>This product works because it:</p>
+                <ul>
+                    <li>✓ Solves a real problem (time + design skills)</li>
+                    <li>✓ Feels premium and professional</li>
+                    <li>✓ Is easy to use (even for beginners)</li>
+                    <li>✓ Includes genuine bonus value</li>
+                    <li>✓ Is priced competitively ($9–$25)</li>
+                    <li>✓ Can be delivered instantly</li>
+                </ul>
+                <p style="margin-top: 20px;"><strong>Your customers will feel like they made a smart investment. That's how you build a sustainable digital product business.</strong></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
