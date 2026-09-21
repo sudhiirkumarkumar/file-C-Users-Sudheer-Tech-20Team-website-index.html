@@ -1,0 +1,142 @@
+<!-- ================================================================
+  AFFILIATE LINK VAULT — WooCommerce Product Description Block
+  Paste this into: Product > Description (Custom HTML / Code block),
+  or Elementor/Gutenberg "Custom HTML" block.
+  No plugins or external scripts required — plain HTML + inline CSS.
+================================================================= -->
+<div class="alv-product-page">
+  <style>
+    .alv-product-page { max-width: 860px; margin: 0 auto; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #1f2937; line-height: 1.6; }
+    .alv-product-page * { box-sizing: border-box; }
+    .alv-product-page h2 { font-size: 26px; font-weight: 700; color: #0f172a; margin: 48px 0 16px; letter-spacing: -0.01em; }
+    .alv-product-page h2:first-child { margin-top: 0; }
+    .alv-product-page p { margin: 0 0 16px; font-size: 16px; }
+    .alv-hero { background: linear-gradient(135deg,#0f172a,#1e3a5f); color: #fff; border-radius: 16px; padding: 40px 32px; text-align: center; margin-bottom: 8px; }
+    .alv-hero .eyebrow { text-transform: uppercase; letter-spacing: 0.12em; font-size: 12px; font-weight: 700; color: #34d399; margin-bottom: 10px; }
+    .alv-hero h1 { font-size: 32px; font-weight: 800; margin: 0 0 12px; }
+    .alv-hero p { color: #cbd5e1; font-size: 17px; max-width: 560px; margin: 0 auto; }
+    .alv-badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 20px; }
+    .alv-badge { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #e2e8f0; font-size: 13px; padding: 6px 14px; border-radius: 999px; }
+    .alv-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    @media (max-width: 600px) { .alv-grid { grid-template-columns: 1fr; } }
+    .alv-card { border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px 20px; background: #f8fafc; }
+    .alv-card strong { display: block; color: #0f172a; font-size: 15px; margin-bottom: 4px; }
+    .alv-card span { font-size: 14px; color: #475569; }
+    .alv-check-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 24px; }
+    @media (max-width: 600px) { .alv-check-list { grid-template-columns: 1fr; } }
+    .alv-check-list li { font-size: 15px; padding-left: 28px; position: relative; }
+    .alv-check-list li::before { content: "✓"; position: absolute; left: 0; top: 0; color: #10b981; font-weight: 800; }
+    .alv-included { border: 1px solid #e2e8f0; border-radius: 14px; padding: 8px 24px; background: #ffffff; }
+    .alv-included li { list-style: none; padding: 12px 0; border-bottom: 1px solid #f1f5f9; font-size: 15px; padding-left: 26px; position: relative; }
+    .alv-included li:last-child { border-bottom: none; }
+    .alv-included li::before { content: "●"; position: absolute; left: 0; color: #2563eb; font-size: 10px; top: 18px; }
+    .alv-bonus-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    @media (max-width: 700px) { .alv-bonus-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 480px) { .alv-bonus-grid { grid-template-columns: 1fr; } }
+    .alv-bonus-card { border: 1px solid #d1fae5; background: #ecfdf5; border-radius: 12px; padding: 16px; }
+    .alv-bonus-card .tag { display: inline-block; background: #10b981; color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.04em; padding: 3px 9px; border-radius: 999px; margin-bottom: 8px; }
+    .alv-bonus-card strong { display: block; font-size: 14px; color: #0f172a; margin-bottom: 4px; }
+    .alv-bonus-card span { font-size: 13px; color: #475569; }
+    .alv-faq details { border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px 18px; margin-bottom: 10px; background: #fff; }
+    .alv-faq summary { cursor: pointer; font-weight: 600; font-size: 15px; color: #0f172a; }
+    .alv-faq p { margin: 10px 0 0; font-size: 14px; color: #475569; }
+    .alv-cta { text-align: center; background: #0f172a; border-radius: 16px; padding: 36px 24px; margin: 40px 0; }
+    .alv-cta h2 { color: #fff; margin: 0 0 10px; }
+    .alv-cta p { color: #cbd5e1; margin: 0 0 20px; }
+    .alv-cta-btn { display: inline-block; background: #10b981; color: #fff !important; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 8px; text-decoration: none; }
+    .alv-disclaimer { font-size: 12.5px; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 18px; margin-top: 32px; }
+  </style>
+
+  <!-- HERO -->
+  <div class="alv-hero">
+    <div class="eyebrow">Premium Digital Template System</div>
+    <h1>Affiliate Link Vault</h1>
+    <p>Your all-in-one system to organize, track &amp; manage affiliate links — every program, commission, and piece of content in one place.</p>
+    <div class="alv-badges">
+      <span class="alv-badge">Google Sheets · Excel · Notion Ready</span>
+      <span class="alv-badge">Beginner Friendly</span>
+      <span class="alv-badge">Instant Download</span>
+      <span class="alv-badge">No Subscription</span>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <h2>Stop Losing Affiliate Links in Bookmarks, Notes &amp; Old Emails</h2>
+  <p>If you're promoting affiliate products across a blog, YouTube channel, Instagram, TikTok, or email list, you already know the problem: links scattered everywhere, half-remembered dashboard logins, commission rates you can't quite recall, and no real record of what's actually converting. <strong>Affiliate Link Vault</strong> replaces all of that with one organized, professional system.</p>
+
+  <!-- KEY BENEFITS -->
+  <h2>What You Get</h2>
+  <ul class="alv-check-list">
+    <li>Replace scattered bookmarks &amp; spreadsheets with one system</li>
+    <li>Never lose track of commissions, cookies, or payout terms</li>
+    <li>Catch broken affiliate links before they cost you money</li>
+    <li>Plan content in advance instead of scrambling</li>
+    <li>Skip the blank page with 30 ready-to-use CTA templates</li>
+    <li>Keep disclosures consistent across every platform</li>
+    <li>See your top-performing programs &amp; products at a glance</li>
+    <li>Evaluate new offers objectively before committing time</li>
+    <li>Works in the tools you already use — no new software</li>
+    <li>Built for beginners, scales to unlimited programs</li>
+  </ul>
+
+  <!-- WHAT'S INCLUDED -->
+  <h2>Everything Included</h2>
+  <ul class="alv-included">
+    <li>Affiliate Link Master Vault (structured link database)</li>
+    <li>Affiliate Program Directory</li>
+    <li>Link Organizer — 15 default categories, fully customizable</li>
+    <li>Affiliate Link Status Tracker</li>
+    <li>Performance Tracker with built-in formulas</li>
+    <li>Affiliate Content Planner</li>
+    <li>30-Template CTA Swipe File</li>
+    <li>Platform-Specific Disclosure Templates</li>
+    <li>Monthly Link Audit Checklist</li>
+    <li>Affiliate Dashboard Template</li>
+    <li>30-Day Affiliate Content Plan (pre-built calendar)</li>
+    <li>Affiliate Product Evaluation Scorecard</li>
+    <li>Product Recommendation Database</li>
+    <li>20+ Question FAQ Reference Guide</li>
+    <li>Quick Start Guide — 30-minute setup walkthrough</li>
+  </ul>
+
+  <!-- BONUSES -->
+  <h2>Plus 6 Free Bonuses</h2>
+  <div class="alv-bonus-grid">
+    <div class="alv-bonus-card"><span class="tag">Bonus 1</span><strong>50 Affiliate Content Ideas</strong><span>Ready-to-use prompts for every content type</span></div>
+    <div class="alv-bonus-card"><span class="tag">Bonus 2</span><strong>30 Affiliate Marketing Hooks</strong><span>Opening lines that pull readers in</span></div>
+    <div class="alv-bonus-card"><span class="tag">Bonus 3</span><strong>25 Quick CTA Templates</strong><span>Fast copy-paste set for captions &amp; shorts</span></div>
+    <div class="alv-bonus-card"><span class="tag">Bonus 4</span><strong>Printable Monthly Audit</strong><span>One-page checklist for fast reviews</span></div>
+    <div class="alv-bonus-card"><span class="tag">Bonus 5</span><strong>Program Research Checklist</strong><span>Vet new affiliate programs before joining</span></div>
+    <div class="alv-bonus-card"><span class="tag">Bonus 6</span><strong>Quick Reference Cheat Sheet</strong><span>Key terms, statuses &amp; formulas, one page</span></div>
+  </div>
+
+  <!-- WHO IT'S FOR -->
+  <h2>Who This Is For</h2>
+  <div class="alv-grid">
+    <div class="alv-card"><strong>Bloggers &amp; Creators</strong><span>Organize links across every post and platform</span></div>
+    <div class="alv-card"><strong>YouTubers &amp; Social Creators</strong><span>Track descriptions, bios, and promo links</span></div>
+    <div class="alv-card"><strong>Freelancers &amp; Coaches</strong><span>Manage recommendations professionally</span></div>
+    <div class="alv-card"><strong>Beginners</strong><span>30-minute guided setup, no experience needed</span></div>
+  </div>
+
+  <!-- FAQ -->
+  <h2>Frequently Asked Questions</h2>
+  <div class="alv-faq">
+    <details><summary>Is this a real software or a template?</summary><p>It's a template system (spreadsheet/Notion/printable format) — no software installation or subscription required.</p></details>
+    <details><summary>Do I need technical skills to use it?</summary><p>No. If you can use a spreadsheet or Notion page, you can use this system.</p></details>
+    <details><summary>Does this include real affiliate links already set up?</summary><p>No — this is an organizational system. You add your own real affiliate programs and links; none are pre-included.</p></details>
+    <details><summary>What format do I receive it in?</summary><p>Content is provided ready to import into Google Sheets, Excel, or Notion, and to convert into a printable workbook.</p></details>
+    <details><summary>Is this suitable for complete beginners?</summary><p>Yes — the included Quick Start Guide walks you through setup in about 30 minutes.</p></details>
+    <details><summary>Does it track clicks and sales automatically?</summary><p>No — performance data is entered manually from your own affiliate dashboards using the built-in tracker and formulas.</p></details>
+  </div>
+
+  <!-- CTA -->
+  <div class="alv-cta">
+    <h2>Get the Vault</h2>
+    <p>Organize every affiliate link, program, and piece of content in one place — starting today.</p>
+    <a href="#" class="alv-cta-btn">Get Instant Access</a>
+  </div>
+
+  <!-- DISCLAIMER -->
+  <p class="alv-disclaimer">Affiliate Link Vault is an organizational template system. It does not include real affiliate links, guarantee income or sales, or represent partnerships with any company named in its sample/demo content. Affiliate program terms, commissions, cookie durations, and policies vary and change over time — always verify current details directly with each affiliate program or network. This product does not constitute legal, tax, or financial advice.</p>
+</div>
