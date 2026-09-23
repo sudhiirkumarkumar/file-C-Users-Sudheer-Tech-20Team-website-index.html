@@ -125,9 +125,40 @@ Stop researching. Start building. Get the AI Business Launch Kit 2026 and turn y
 
 ---
 
-## PRODUCT TAGS (20)
+## PRODUCT TAGS
+
+### Marketplace Tags (20) — for Aqvani.shop's tag field
 
 AI business, business launch kit, solopreneur toolkit, AI prompts, digital product, business planner, startup templates, AI for entrepreneurs, offer builder, business workbook, content calendar, launch checklist, side hustle, freelancer toolkit, AI marketing, small business templates, business dashboard, prompt pack, 2026 business trends, no-code business
+
+### Extended Tag Set (by category, for search/filter coverage)
+
+Use these to fill out category filters, related-products matching, or a second tag field if Aqvani.shop supports more than 20.
+
+**Product type**
+digital download, notion template, spreadsheet template, workbook, planner, toolkit, prompt library, swipe file, business bundle
+
+**Audience**
+aspiring entrepreneur, freelancer resources, coach and consultant tools, creator economy, side hustle starter kit, non-technical founder, first business, solo business owner
+
+**Use case / outcome**
+business idea validation, offer creation, personal branding, content planning, lead generation, outreach templates, sales scripts, business dashboard template, KPI tracker
+
+**Topic / trend**
+AI tools 2026, AI workflow, AI automation basics, productized service, AI content creation, AI for small business, launch strategy, 7 day challenge, 30 day plan
+
+### Social Hashtag Set (for Instagram/TikTok/LinkedIn captions)
+
+A mix of broad-reach and niche tags — pick 15-20 per post rather than using all of them at once, and rotate sets across posts.
+
+**Broad reach**
+`#AIbusiness` `#SmallBusinessTips` `#Solopreneur` `#Entrepreneurship` `#SideHustle` `#DigitalProducts` `#BusinessTips` `#StartupLife`
+
+**Niche / specific**
+`#AIforBusiness` `#AItools2026` `#BusinessLaunchKit` `#AIpromptpack` `#ProductizedService` `#FreelancerLife` `#CreatorEconomy` `#NoCodeBusiness` `#AIworkflow`
+
+**Community / discovery**
+`#SmallBusinessOwner` `#WomenInBusiness` `#BusinessCoach` `#OnlineBusinessTips` `#DigitalEntrepreneur` `#BusinessPlanning` `#AqvaniShop`
 
 ---
 
