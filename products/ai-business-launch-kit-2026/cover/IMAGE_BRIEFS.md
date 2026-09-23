@@ -132,6 +132,136 @@ aesthetic, indigo and white color palette, no people.
 
 ---
 
+---
+
+## GALLERY IMAGES (Listing Page, Scrollable Set)
+
+Most Aqvani.shop listings show a primary cover (Image 1) plus a scrollable gallery underneath. These six gallery images give buyers a "flip through the kit" experience before they purchase — each one is a flat, screenshot-style mockup of a real spread from one file, all sharing the same light-cream page background and layout grid so they read as one consistent set when scrolled through. Recommended size: 1600×1200px (4:3), consistent across all six so they display evenly in a gallery strip.
+
+### Gallery 1 — "What's Inside" Overview Grid
+
+**Filename:** `gallery-01-whats-inside.jpg`
+
+**Purpose:** The first gallery image after the cover — gives buyers the full contents list at a glance before they scroll further.
+
+**Description:** Cream background matching the hero image. Centered heading: `WHAT'S INSIDE THE KIT`. Below it, a clean 2-column × 5-row grid of 10 small file-icon cards (one per numbered file), each card showing a bold number badge (01-10), a short document-stack icon, and the file name in small caps: `START HERE`, `LAUNCH GUIDE`, `PROMPT VAULT`, `BUSINESS WORKBOOK`, `30-DAY PLANNER`, `AI TOOL STACK`, `MARKETING SWIPE FILE`, `LAUNCH CHECKLIST`, `BUSINESS DASHBOARD`, `BONUS CONTENT IDEAS`. Consistent indigo/gold accent color on each number badge, generous white space between cards.
+
+**Generation Prompt:**
+```
+A clean cream-background infographic titled "WHAT'S INSIDE THE KIT"
+in bold black serif type. Below it, a 2-column by 5-row grid of 10
+small flat-icon cards, each with a numbered circular badge (01
+through 10) in indigo and gold, a simple document-stack icon, and a
+short file-name label in small caps beneath. Minimal, organized,
+premium digital-product infographic style, plenty of white space, no
+people.
+```
+
+**Alt text:** `AI Business Launch Kit 2026 — overview grid of all 10 files included, numbered 01 through 10`
+
+---
+
+### Gallery 2 — AI Prompt Vault Close-Up
+
+**Filename:** `gallery-02-prompt-vault.jpg`
+
+**Purpose:** Shows the format of the 150-prompt library so buyers know exactly what a "prompt card" looks like before buying.
+
+**Description:** A single zoomed-in page mockup on a soft cream background, drop shadow beneath. Page header in rust-red small caps: `AI PROMPT VAULT — SECTION 5: OFFER CREATION`. Below it, one full prompt card matching the kit's actual format: bold heading `P046 — Full Offer Draft Prompt`, then labeled lines `What it does:`, `When to use it:`, a gray monospace prompt box with 3-4 lines of visible prompt text, `Variables to customize:`, and `Expected output:`. A small magnifying-glass or "zoomed in" visual cue in a corner to signal this is a close-up of a bigger document.
+
+**Generation Prompt:**
+```
+A single zoomed-in document page mockup floating on a soft cream
+background with a drop shadow. Page header in small rust-red caps
+"AI PROMPT VAULT — SECTION 5: OFFER CREATION". Below, one prompt
+card with a bold black heading "P046 — Full Offer Draft Prompt",
+labeled fields "What it does:", "When to use it:", a light gray
+monospace text box containing sample prompt text, "Variables to
+customize:", and "Expected output:". Clean editorial document
+mockup style, no people.
+```
+
+**Alt text:** `AI Prompt Vault sample page — copy-paste AI prompt card with variables and expected output`
+
+---
+
+### Gallery 3 — Business Workbook Worksheet Sample
+
+**Filename:** `gallery-03-workbook.jpg`
+
+**Purpose:** Shows the fillable worksheet format from File 04.
+
+**Description:** Cream page mockup, drop shadow, header `BUSINESS WORKBOOK — WORKSHEET 3: CUSTOMER`. Below, a printable worksheet layout with labeled fill-in lines (underscored blanks) for fields like "Who exactly is my customer?", "Where do they spend time online?", "What's their likely budget range?" — rendered as realistic form fields with visible ruled lines, giving a tactile "print and fill in" feel.
+
+**Generation Prompt:**
+```
+A single printable worksheet page mockup on a cream background with
+a soft drop shadow. Header reads "BUSINESS WORKBOOK — WORKSHEET 3:
+CUSTOMER". Below, several labeled questions each followed by a ruled
+blank line for handwritten answers, in a clean, spacious, printable
+worksheet layout. Minimal black text on off-white paper texture, no
+people.
+```
+
+**Alt text:** `Business Workbook sample worksheet — fillable Customer worksheet with guided questions`
+
+---
+
+### Gallery 4 — 30-Day Launch Planner Calendar View
+
+**Filename:** `gallery-04-planner.jpg`
+
+**Purpose:** Shows the day-by-day roadmap structure from File 05.
+
+**Description:** Cream background, header `30-DAY LAUNCH PLANNER — WEEK 1: IDEA + MARKET`. Below, a vertical list of 4-5 day entries (Day 1 through Day 5), each row showing a bold day number, a short task line, an "AI Prompt:" reference code (e.g., P001, P003), a "Deliverable:" line, and an empty checkbox at the end of the row. Rust-red accent color on the day numbers, checkboxes rendered as simple square outline icons.
+
+**Generation Prompt:**
+```
+A cream-background planner page mockup with a drop shadow, header
+"30-DAY LAUNCH PLANNER — WEEK 1: IDEA + MARKET". Below, a vertical
+list of 5 day-by-day rows, each with a bold rust-red day number, a
+short task description, a small "AI Prompt:" code reference, a
+"Deliverable:" line, and an empty square checkbox at the row's end.
+Clean planner/calendar layout, minimal, no people.
+```
+
+**Alt text:** `30-Day Launch Planner sample — Week 1 day-by-day tasks, AI prompts, deliverables, and checkboxes`
+
+---
+
+### Gallery 5 — AI Business Dashboard Spreadsheet
+
+**Filename:** `gallery-05-dashboard.jpg`
+
+Same as **Image 3** above (`product-dashboard-preview.jpg`) — reused here as a gallery entry so the spreadsheet is visible in-context with the other files. See that section for the full brief.
+
+**Alt text:** `AI Business Dashboard spreadsheet preview — one-page business snapshot and weekly KPI tracker`
+
+---
+
+### Gallery 6 — Marketing Swipe File / Hook Templates
+
+**Filename:** `gallery-06-swipe-file.jpg`
+
+**Purpose:** Shows the ready-to-use copy from File 07, one of the kit's most visually "scannable" components.
+
+**Description:** Cream page mockup, header `MARKETING SWIPE FILE — ATTENTION-GRABBING HOOK TEMPLATES`. Below, a numbered list of 6-8 short hook lines styled as quote-like callouts (e.g., in italic, with a thin left border accent in rust-red), such as sample hooks about problem-focused and curiosity-driven openers. A small caption at the bottom in muted gray: `50 hooks included — always personalize before use.`
+
+**Generation Prompt:**
+```
+A cream-background document mockup with a drop shadow, header
+"MARKETING SWIPE FILE — ATTENTION-GRABBING HOOK TEMPLATES". Below, a
+numbered list of 7 short italic quote-style lines, each with a thin
+rust-red left border accent, styled as swipeable headline/hook
+examples. A small gray caption at the bottom reads "50 hooks
+included — always personalize before use." Clean editorial swipe-
+file layout, no people.
+```
+
+**Alt text:** `Marketing Swipe File sample — attention-grabbing hook templates for content and ads`
+
+---
+
 ## Alt Text Summary (for quick copy into the store listing)
 
 | Image | Alt Text |
@@ -139,5 +269,11 @@ aesthetic, indigo and white color palette, no people.
 | Product cover (3D book) | AI Business Launch Kit 2026 — 3D book cover mockup, Aqvani.shop premium digital product, dark navy and gold design |
 | Hero / listing banner | AI Business Launch Kit 2026 — preview of prompt vault, workbook, 30-day planner, and dashboard pages, Aqvani.shop |
 | Dashboard preview (optional) | AI Business Dashboard spreadsheet preview — one-page business snapshot and weekly KPI tracker with auto-calculated conversion rate |
+| Gallery 1 — What's Inside | AI Business Launch Kit 2026 — overview grid of all 10 files included, numbered 01 through 10 |
+| Gallery 2 — Prompt Vault | AI Prompt Vault sample page — copy-paste AI prompt card with variables and expected output |
+| Gallery 3 — Workbook | Business Workbook sample worksheet — fillable Customer worksheet with guided questions |
+| Gallery 4 — Planner | 30-Day Launch Planner sample — Week 1 day-by-day tasks, AI prompts, deliverables, and checkboxes |
+| Gallery 5 — Dashboard | AI Business Dashboard spreadsheet preview — one-page business snapshot and weekly KPI tracker |
+| Gallery 6 — Swipe File | Marketing Swipe File sample — attention-grabbing hook templates for content and ads |
 
 This replaces the single generic `Image Alt Text` line in `AQVANI_SHOP_PRODUCT_LISTING.md` with per-image alt text — see that file's SEO section for the primary listing alt text, which now points here for the full set.
