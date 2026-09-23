@@ -1,0 +1,160 @@
+<!-- ================================================================
+  SKOOL COMMUNITY STARTER KIT — WooCommerce Product Description Block
+  Paste this into: Product > Description (Custom HTML / Code block),
+  or Elementor/Gutenberg "Custom HTML" block.
+  No plugins or external scripts required — plain HTML + inline CSS.
+================================================================= -->
+<div class="scsk-product-page">
+  <style>
+    .scsk-product-page { max-width: 860px; margin: 0 auto; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #1f2937; line-height: 1.6; }
+    .scsk-product-page * { box-sizing: border-box; }
+    .scsk-product-page h2 { font-size: 26px; font-weight: 700; color: #0f172a; margin: 48px 0 16px; letter-spacing: -0.01em; }
+    .scsk-product-page h2:first-child { margin-top: 0; }
+    .scsk-product-page p { margin: 0 0 16px; font-size: 16px; }
+    .scsk-hero { background: linear-gradient(135deg,#0f172a,#3b1e5f); color: #fff; border-radius: 16px; padding: 40px 32px; text-align: center; margin-bottom: 8px; }
+    .scsk-hero .eyebrow { text-transform: uppercase; letter-spacing: 0.12em; font-size: 12px; font-weight: 700; color: #c084fc; margin-bottom: 10px; }
+    .scsk-hero h1 { font-size: 32px; font-weight: 800; margin: 0 0 12px; }
+    .scsk-hero p { color: #cbd5e1; font-size: 17px; max-width: 560px; margin: 0 auto; }
+    .scsk-badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 20px; }
+    .scsk-badge { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #e2e8f0; font-size: 13px; padding: 6px 14px; border-radius: 999px; }
+    .scsk-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    @media (max-width: 600px) { .scsk-grid { grid-template-columns: 1fr; } }
+    .scsk-card { border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px 20px; background: #f8fafc; }
+    .scsk-card strong { display: block; color: #0f172a; font-size: 15px; margin-bottom: 4px; }
+    .scsk-card span { font-size: 14px; color: #475569; }
+    .scsk-check-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 24px; }
+    @media (max-width: 600px) { .scsk-check-list { grid-template-columns: 1fr; } }
+    .scsk-check-list li { font-size: 15px; padding-left: 28px; position: relative; }
+    .scsk-check-list li::before { content: "✓"; position: absolute; left: 0; top: 0; color: #a855f7; font-weight: 800; }
+    .scsk-included { border: 1px solid #e2e8f0; border-radius: 14px; padding: 8px 24px; background: #ffffff; }
+    .scsk-included li { list-style: none; padding: 12px 0; border-bottom: 1px solid #f1f5f9; font-size: 15px; padding-left: 26px; position: relative; }
+    .scsk-included li:last-child { border-bottom: none; }
+    .scsk-included li::before { content: "●"; position: absolute; left: 0; color: #7c3aed; font-size: 10px; top: 18px; }
+    .scsk-bonus-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+    @media (max-width: 700px) { .scsk-bonus-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 480px) { .scsk-bonus-grid { grid-template-columns: 1fr; } }
+    .scsk-bonus-card { border: 1px solid #ede9fe; background: #f5f3ff; border-radius: 12px; padding: 14px; }
+    .scsk-bonus-card .tag { display: inline-block; background: #7c3aed; color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.04em; padding: 3px 9px; border-radius: 999px; margin-bottom: 8px; }
+    .scsk-bonus-card strong { display: block; font-size: 13.5px; color: #0f172a; margin-bottom: 4px; }
+    .scsk-bonus-card span { font-size: 12.5px; color: #475569; }
+    .scsk-timeline { border-left: 3px solid #a855f7; padding-left: 20px; margin: 0 0 16px; }
+    .scsk-timeline .step { margin-bottom: 16px; }
+    .scsk-timeline .step strong { display: block; color: #0f172a; font-size: 15px; }
+    .scsk-timeline .step span { font-size: 14px; color: #475569; }
+    .scsk-faq details { border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px 18px; margin-bottom: 10px; background: #fff; }
+    .scsk-faq summary { cursor: pointer; font-weight: 600; font-size: 15px; color: #0f172a; }
+    .scsk-faq p { margin: 10px 0 0; font-size: 14px; color: #475569; }
+    .scsk-cta { text-align: center; background: #0f172a; border-radius: 16px; padding: 36px 24px; margin: 40px 0; }
+    .scsk-cta h2 { color: #fff; margin: 0 0 10px; }
+    .scsk-cta p { color: #cbd5e1; margin: 0 0 20px; }
+    .scsk-cta-btn { display: inline-block; background: #a855f7; color: #fff !important; font-weight: 700; font-size: 16px; padding: 14px 32px; border-radius: 8px; text-decoration: none; }
+    .scsk-disclaimer { font-size: 12.5px; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 18px; margin-top: 32px; }
+  </style>
+
+  <!-- HERO -->
+  <div class="scsk-hero">
+    <div class="eyebrow">Premium Digital Template System</div>
+    <h1>Skool Community Starter Kit</h1>
+    <p>Everything you need to launch, organize &amp; grow your first online community — positioning, structure, content, and engagement, all done for you.</p>
+    <div class="scsk-badges">
+      <span class="scsk-badge">Launch in 48 Hours</span>
+      <span class="scsk-badge">Beginner Friendly</span>
+      <span class="scsk-badge">Instant Download</span>
+      <span class="scsk-badge">No Subscription</span>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <h2>Stop Staring at a Blank Community Feed</h2>
+  <p>You want to start a community, but the moment you sit down to build it, the questions pile up: what categories? what do you post on day one? how do you get people to actually engage? Most people either freeze at the planning stage or launch something that goes quiet within two weeks. <strong>Skool Community Starter Kit</strong> replaces the guesswork with a complete, done-for-you launch system.</p>
+
+  <!-- KEY BENEFITS -->
+  <h2>What You Get</h2>
+  <ul class="scsk-check-list">
+    <li>Launch your community in as little as 48 hours</li>
+    <li>Never face a blank page — 30+ days of content, templated</li>
+    <li>Structure your community &amp; classroom the right way from day one</li>
+    <li>Keep members engaged with proven challenge frameworks</li>
+    <li>50 ready-to-customize post templates</li>
+    <li>5 ready-to-run community challenges</li>
+    <li>Track what's working with a simple KPI system</li>
+    <li>Approach monetization thoughtfully — no guessing</li>
+    <li>Works in Notion, Google Docs/Sheets, or print</li>
+    <li>Built for beginners, no technical skills required</li>
+  </ul>
+
+  <!-- LAUNCH PATH -->
+  <h2>Your Launch Path</h2>
+  <div class="scsk-timeline">
+    <div class="step"><strong>Step 1 — Positioning</strong><span>Define your niche, audience, and promise with 10 ready-to-use formulas.</span></div>
+    <div class="step"><strong>Step 2 — Structure</strong><span>Set up your categories, classroom, and rules using the included blueprint.</span></div>
+    <div class="step"><strong>Step 3 — Launch</strong><span>Follow the 48-Hour Quick-Start or full 7-Day Launch Plan to go live.</span></div>
+    <div class="step"><strong>Step 4 — Engage</strong><span>Run the 14-Day Engagement Plan, then the 30-Day Content Calendar.</span></div>
+    <div class="step"><strong>Step 5 — Grow</strong><span>Use the Growth Planner, KPI Tracker, and Monthly Audit to keep improving.</span></div>
+  </div>
+
+  <!-- WHAT'S INCLUDED -->
+  <h2>Everything Included</h2>
+  <ul class="scsk-included">
+    <li>Quick-Start Guide — launch in 48 hours + full 7-Day Launch Plan</li>
+    <li>Community Setup Checklist</li>
+    <li>Community Positioning Workbook — 10 positioning formulas</li>
+    <li>Community Structure Blueprint</li>
+    <li>Classroom Planner — 6-module structure</li>
+    <li>Community Rules Template</li>
+    <li>Onboarding Swipe File — 10+ welcome templates</li>
+    <li>14-Day Engagement Plan — full daily post copy</li>
+    <li>30-Day Content Calendar</li>
+    <li>Community Post Swipe File — 50 templates</li>
+    <li>Community Challenge Kit — 5 ready-to-run challenges</li>
+    <li>Engagement &amp; Gamification Toolkit</li>
+    <li>Monetization Planner</li>
+    <li>Growth Planner — 30-day roadmap</li>
+    <li>KPI Tracker &amp; Monthly Audit Checklist</li>
+    <li>15+ Common Beginner Mistakes Guide</li>
+    <li>12-Worksheet Printable Pack</li>
+  </ul>
+
+  <!-- BONUSES -->
+  <h2>Plus 8 Free Bonuses</h2>
+  <div class="scsk-bonus-grid">
+    <div class="scsk-bonus-card"><span class="tag">Bonus 1</span><strong>100 Engagement Questions</strong><span>Ready-to-post prompts, 5 categories</span></div>
+    <div class="scsk-bonus-card"><span class="tag">Bonus 2</span><strong>50 Post Hooks</strong><span>Opening lines that pull members in</span></div>
+    <div class="scsk-bonus-card"><span class="tag">Bonus 3</span><strong>30 Poll Ideas</strong><span>Fast, low-effort engagement</span></div>
+    <div class="scsk-bonus-card"><span class="tag">Bonus 4</span><strong>50 CTA Templates</strong><span>Discussion, action &amp; sharing CTAs</span></div>
+    <div class="scsk-bonus-card"><span class="tag">Bonus 5</span><strong>Welcome Swipe File</strong><span>Quick-reference welcome copy</span></div>
+    <div class="scsk-bonus-card"><span class="tag">Bonus 6</span><strong>Content Planner</strong><span>One-page printable version</span></div>
+    <div class="scsk-bonus-card"><span class="tag">Bonus 7</span><strong>Launch Checklist</strong><span>Fast pre-launch reference</span></div>
+    <div class="scsk-bonus-card"><span class="tag">Bonus 8</span><strong>Daily Checklist</strong><span>What to do every day once live</span></div>
+  </div>
+
+  <!-- WHO IT'S FOR -->
+  <h2>Who This Is For</h2>
+  <div class="scsk-grid">
+    <div class="scsk-card"><strong>Coaches &amp; Consultants</strong><span>Support clients with a structured community space</span></div>
+    <div class="scsk-card"><strong>Course Creators</strong><span>Boost engagement and completion with community</span></div>
+    <div class="scsk-card"><strong>Freelancers &amp; Educators</strong><span>Build a home base for your audience</span></div>
+    <div class="scsk-card"><strong>Complete Beginners</strong><span>48-hour guided launch, no experience needed</span></div>
+  </div>
+
+  <!-- FAQ -->
+  <h2>Frequently Asked Questions</h2>
+  <div class="scsk-faq">
+    <details><summary>Is this specific to the Skool platform?</summary><p>It uses Skool's common structure (categories, classroom, feed) as the working example, but the strategy and templates apply to any community platform.</p></details>
+    <details><summary>Do I need an existing audience to use this?</summary><p>No — the kit includes a Growth Planner specifically for building an audience from scratch.</p></details>
+    <details><summary>Is this suitable for a complete beginner?</summary><p>Yes — the 48-Hour Quick-Start Guide assumes no prior community-building experience.</p></details>
+    <details><summary>How long does it take to implement?</summary><p>As fast as 48 hours for core setup, with 30+ days of content and engagement plans included beyond that.</p></details>
+    <details><summary>Does this guarantee community growth?</summary><p>No — no specific growth or income outcome is promised. Results depend on your niche, effort, and audience.</p></details>
+    <details><summary>Can I use this for a paid community?</summary><p>Yes — the included Monetization Planner specifically addresses paid and hybrid community models.</p></details>
+  </div>
+
+  <!-- CTA -->
+  <div class="scsk-cta">
+    <h2>Launch Your Community</h2>
+    <p>Everything you need to go from idea to fully launched community — starting today.</p>
+    <a href="#" class="scsk-cta-btn">Get Instant Access</a>
+  </div>
+
+  <!-- DISCLAIMER -->
+  <p class="scsk-disclaimer">Skool Community Starter Kit is an independent educational and template product. It is not affiliated with, endorsed by, or officially connected to Skool or any other community platform mentioned. No specific income, member count, or growth outcome is promised or guaranteed — results depend on your niche, content, effort, and audience. This product does not constitute legal, tax, or financial advice.</p>
+</div>
