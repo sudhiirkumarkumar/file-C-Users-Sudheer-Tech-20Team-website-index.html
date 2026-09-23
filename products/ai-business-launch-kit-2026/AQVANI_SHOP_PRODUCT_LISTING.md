@@ -150,7 +150,9 @@ AI business, business launch kit, solopreneur toolkit, AI prompts, digital produ
 
 **Product Slug:** ai-business-launch-kit-2026
 
-**Image Alt Text:** AI Business Launch Kit 2026 digital product cover — AI-powered business launch toolkit for entrepreneurs
+**Image Alt Text (primary listing image):** AI Business Launch Kit 2026 digital product cover — AI-powered business launch toolkit for entrepreneurs
+
+**Full image set:** design briefs and alt text for the product cover, hero/listing banner, and optional dashboard preview image are in `cover/IMAGE_BRIEFS.md`.
 
 ---
 
