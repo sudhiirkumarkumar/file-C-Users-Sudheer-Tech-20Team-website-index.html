@@ -239,11 +239,13 @@ Same as **Image 3** above (`product-dashboard-preview.jpg`) — reused here as a
 
 ---
 
-### Gallery 6 — Marketing Swipe File / Hook Templates
+### Gallery 6 — Marketing Swipe File / Hook Generator ✅ DELIVERED
 
-**Filename:** `gallery-06-swipe-file.jpg`
+**Filename:** `gallery-hook-generator.png` (3200×1800px, rendered)
 
-**Purpose:** Shows the ready-to-use copy from File 07, one of the kit's most visually "scannable" components.
+**Status:** Built and included in this folder — rendered as an HTML/CSS page (not an AI diffusion image, since none was available in-session) and captured via headless Chromium. It uses the kit's real hook categories and hook text pulled directly from File 07 (Question, Bold Statement, Story, List/Number, Curiosity, Direct-Address, Contrarian, and How-To hooks), styled to match the cream/rust/gold palette established by the cover and hero images, with the same "attention-grabbing, not guaranteed-viral" disclaimer the kit uses everywhere else.
+
+**Original brief (superseded by the delivered asset above, kept for reference):**
 
 **Description:** Cream page mockup, header `MARKETING SWIPE FILE — ATTENTION-GRABBING HOOK TEMPLATES`. Below, a numbered list of 6-8 short hook lines styled as quote-like callouts (e.g., in italic, with a thin left border accent in rust-red), such as sample hooks about problem-focused and curiosity-driven openers. A small caption at the bottom in muted gray: `50 hooks included — always personalize before use.`
 
@@ -258,7 +260,7 @@ included — always personalize before use." Clean editorial swipe-
 file layout, no people.
 ```
 
-**Alt text:** `Marketing Swipe File sample — attention-grabbing hook templates for content and ads`
+**Alt text:** `Hook Generator graphic — 50 attention-grabbing hook templates across 10 categories, AI Business Launch Kit 2026`
 
 ---
 
@@ -274,6 +276,6 @@ file layout, no people.
 | Gallery 3 — Workbook | Business Workbook sample worksheet — fillable Customer worksheet with guided questions |
 | Gallery 4 — Planner | 30-Day Launch Planner sample — Week 1 day-by-day tasks, AI prompts, deliverables, and checkboxes |
 | Gallery 5 — Dashboard | AI Business Dashboard spreadsheet preview — one-page business snapshot and weekly KPI tracker |
-| Gallery 6 — Swipe File | Marketing Swipe File sample — attention-grabbing hook templates for content and ads |
+| Gallery 6 — Hook Generator ✅ delivered | Hook Generator graphic — 50 attention-grabbing hook templates across 10 categories, AI Business Launch Kit 2026 |
 
 This replaces the single generic `Image Alt Text` line in `AQVANI_SHOP_PRODUCT_LISTING.md` with per-image alt text — see that file's SEO section for the primary listing alt text, which now points here for the full set.
