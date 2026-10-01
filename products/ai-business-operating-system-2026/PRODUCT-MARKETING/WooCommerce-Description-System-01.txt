@@ -1,0 +1,242 @@
+=====================================================================
+AQVANI.SHOP — WOOCOMMERCE LISTING
+Product: AI Business Strategy System (System 01 of AI Business Operating System 2026)
+Every number below is counted from the actual product files.
+=====================================================================
+
+---------------------------------------------------------------------
+1. PRODUCT NAME (WooCommerce "Product name" field)
+---------------------------------------------------------------------
+AI Business Strategy System 2026 — Workbook, Templates, Offer Builder & 90-Day Roadmap
+
+---------------------------------------------------------------------
+2. SHORT DESCRIPTION (WooCommerce "Product short description" box)
+   Paste into the Text/Code tab.
+---------------------------------------------------------------------
+<p><strong>Stop guessing. Build a clear business strategy in 7 days with AI as your drafting partner.</strong></p>
+<p>A step-by-step system for small-business owners, freelancers, consultants and coaches. It covers your ideal customer, your offer, your pricing and your 90-day plan, and you finish with your whole strategy on one page.</p>
+<ul>
+<li>23 business tools, each with a worksheet, a worked example and AI prompts</li>
+<li>40 ready-to-use AI prompts for Claude and other AI assistants</li>
+<li>Customer Persona Builder spreadsheet with automatic scoring</li>
+<li>Offer Builder and 90-Day Business Roadmap planner</li>
+</ul>
+<p>Instant digital download · PDF + Excel/Google Sheets · Beginner-friendly</p>
+
+---------------------------------------------------------------------
+3. LONG DESCRIPTION (main product description editor)
+   In the WordPress editor, switch to "Code editor" (block editor)
+   or the "Text" tab (classic editor) and paste everything below.
+---------------------------------------------------------------------
+<h2>Your business deserves a strategy — not another stack of random AI prompts.</h2>
+
+<p>Most small businesses don't struggle because the owner isn't working hard. They struggle because the owner is working hard without a clear plan. They sell to "everyone", compete on price, describe the business differently every time and plan one week at a time.</p>
+
+<p><strong>The AI Business Strategy System</strong> fixes that with a structured, step-by-step process. You don't write a 40-page business plan. You make a short series of clear decisions. Each one is recorded on a worksheet, and an AI prompt does the heavy drafting for you.</p>
+
+<p>When you finish, you'll have:</p>
+<ul>
+<li>✔ <strong>A clearly defined customer</strong>, based on real evidence instead of guesswork</li>
+<li>✔ <strong>An offer you can explain in 30 seconds</strong>, with clear deliverables and terms</li>
+<li>✔ <strong>A reason customers should choose you</strong>: a USP you can actually prove</li>
+<li>✔ <strong>A price you can defend</strong>, calculated from your real costs instead of copied from competitors</li>
+<li>✔ <strong>A realistic 90-day plan</strong> with one clear priority every week</li>
+<li>✔ <strong>Your entire strategy on one page</strong>, ready to share with your team or your AI assistant</li>
+</ul>
+
+<h2>Who this is for</h2>
+<ul>
+<li>Small-business owners who feel busy but not in control of where the business is going</li>
+<li>Freelancers and consultants who take on any work that comes and want steadier, better-fit clients</li>
+<li>Coaches and service providers planning a new programme, package or price</li>
+<li>Online sellers and digital-product creators competing with cheaper alternatives</li>
+<li>Local businesses (cleaning, repairs, salons, clinics, studios) who want recurring customers</li>
+<li>Anyone starting a business who wants to test the idea before spending money</li>
+</ul>
+
+<h2>Who this is NOT for</h2>
+<ul>
+<li>People looking for a "get rich quick" shortcut or guaranteed income</li>
+<li>Anyone who wants AI to make every decision for them. This system helps you think; it doesn't think for you</li>
+<li>Large companies that need formal investor business plans or financial models</li>
+</ul>
+
+<h2>How it works: the 4-step loop</h2>
+<p>Every tool in the system follows the same simple loop:</p>
+<ol>
+<li><strong>INPUT</strong>: fill in a short worksheet with what you actually know.</li>
+<li><strong>AI PROCESS</strong>: paste it into the matching ready-made prompt.</li>
+<li><strong>OUTPUT</strong>: review the draft against a "Done when" checklist.</li>
+<li><strong>ACTION</strong>: record your final decision and move to the next tool.</li>
+</ol>
+<p>Because the AI works from <em>your</em> real information, you get specific answers built around your business instead of generic AI text.</p>
+
+<h2>The 5-layer strategy stack</h2>
+<p>You work through five layers in order. Each layer builds on the one before it:</p>
+<table>
+<thead><tr><th>Layer</th><th>The question it answers</th><th>Tools included</th></tr></thead>
+<tbody>
+<tr><td><strong>1 · Foundation</strong></td><td>How does my business really make money, and is my idea sound?</td><td>Business Profile, Business Model Map, Business Idea Validator</td></tr>
+<tr><td><strong>2 · Customer</strong></td><td>Who exactly do I serve, and what problem will they pay to solve?</td><td>Niche Research, Customer Persona Builder, Ideal Customer Profile, Pain Point Finder, Problem–Solution Fit</td></tr>
+<tr><td><strong>3 · Market</strong></td><td>Who else serves them, and where is the gap I can own?</td><td>Competitor Analysis, Competitor Comparison, SWOT with Action Converter</td></tr>
+<tr><td><strong>4 · Offer</strong></td><td>What do I sell, why choose me, and at what price?</td><td>USP Builder, Offer Builder, Value Proposition Builder, Positioning Framework, Pricing Strategy Worksheet</td></tr>
+<tr><td><strong>5 · Direction</strong></td><td>What will I focus on in the next 90 days?</td><td>Goal Planner, SMART Goals, 90-Day Roadmap, Risk Assessment, Priority Matrix, Growth Opportunity Finder</td></tr>
+</tbody>
+</table>
+<p>You finish with the <strong>One-Page Strategy Summary</strong>: your whole strategy on a single page.</p>
+
+<h2>What's included</h2>
+
+<h3>1. Business Strategy Workbook (PDF)</h3>
+<p>The core of the system. It covers 23 business tools, and each one includes:</p>
+<ul>
+<li>When to use it, and how long it takes</li>
+<li>The thinking behind it, in plain language</li>
+<li>Step-by-step instructions</li>
+<li>A worksheet</li>
+<li>A filled-in worked example from a realistic (fictional) business</li>
+<li>Copy-and-paste AI prompts with clear instructions</li>
+<li>Common mistakes to avoid</li>
+<li>A "Done when" checklist so you know when it's good enough to use</li>
+</ul>
+
+<h3>2. Business Strategy Templates (PDF)</h3>
+<p>23 blank, printable worksheets, one per page, so you can work on paper or on screen.</p>
+
+<h3>3. Customer Persona Builder (Excel / Google Sheets)</h3>
+<p>A ready-made spreadsheet that does the scoring for you:</p>
+<ul>
+<li><strong>Persona Builder</strong>: build up to 3 customer personas side by side</li>
+<li><strong>Pain Point Scoring</strong>: rank your customers' problems automatically, so you know which one to lead with</li>
+<li><strong>ICP Scorecard</strong>: score each new enquiry to see whether it's a good fit before you spend time on it</li>
+<li><strong>Interview Log</strong>: capture what real customers tell you</li>
+</ul>
+
+<h3>4. Offer Builder: The Offer Lab (PDF)</h3>
+<p>A 7-step process that turns a rough idea into a sales-ready offer. You define:</p>
+<ul>
+<li>What you can promise and what you can't</li>
+<li>How the offer is delivered</li>
+<li>What's included and what isn't</li>
+<li>Fair terms, and a name customers understand</li>
+<li>A one-page offer document you can send on WhatsApp or email</li>
+</ul>
+<p>Includes 3 complete example offers (a consultant, a freelancer and a coach).</p>
+
+<h3>5. 90-Day Business Roadmap (PDF)</h3>
+<p>A 13-week planner built for owners who don't have spare time. It includes:</p>
+<ul>
+<li>A capacity calculator, so your plan matches the hours you really have</li>
+<li>A weekly sprint page and a 90-day scorecard</li>
+<li>Review pages for weeks 4, 9 and 13</li>
+<li>A "reset" process for when you fall behind</li>
+<li>A complete filled-in 13-week example</li>
+</ul>
+
+<h3>6. 40 professional AI prompts</h3>
+<p>These aren't one-line prompts. Each one is a complete prompt card with:</p>
+<ul>
+<li>The purpose, and when to use it</li>
+<li>What information to have ready</li>
+<li>The copy-and-paste prompt itself, written with a clear role, objective, constraints and output format</li>
+<li>What a good result looks like</li>
+<li>Ways to customise it</li>
+</ul>
+<p>They're designed for Claude and work with other capable AI assistants.</p>
+
+<h2>Examples from real-world business types</h2>
+<p>Every tool comes with a worked example, so you can see exactly what a good answer looks like. The examples follow seven fictional businesses:</p>
+<ul>
+<li>A local cleaning service</li>
+<li>A home-repair business</li>
+<li>A social media freelancer</li>
+<li>An operations consultant</li>
+<li>An online fitness coach</li>
+<li>A digital-template store</li>
+<li>A handmade home-décor e-commerce brand</li>
+</ul>
+
+<h2>What makes this different</h2>
+<ul>
+<li><strong>It's a system, not a prompt pack.</strong> The tools are in a deliberate order, and each output feeds the next.</li>
+<li><strong>Evidence comes first.</strong> You score ideas, customers and problems on real evidence, not on enthusiasm.</li>
+<li><strong>Honest by design.</strong> The prompts are built to stop AI from inventing statistics, fake testimonials or promises you can't keep.</li>
+<li><strong>It's practical for small teams.</strong> Plans are built around the hours you actually have, and prices are calculated from your real costs.</li>
+<li><strong>It works for Indian businesses and beyond.</strong> Examples use ₹ and familiar channels like WhatsApp, and the methods work anywhere.</li>
+</ul>
+
+<h2>How long does it take?</h2>
+<ul>
+<li><strong>Fast route (about 6–7 hours over 3 sittings):</strong> for an existing business that needs clarity quickly</li>
+<li><strong>1-week route (60–90 minutes a day):</strong> for new businesses, or if you want to talk to real customers along the way</li>
+</ul>
+
+<h2>Frequently asked questions</h2>
+
+<p><strong>Do I need to be good with AI or technology?</strong><br>
+No. Every prompt tells you what to paste and what to expect back. If you can copy and paste, you can use this system.</p>
+
+<p><strong>Which AI tool do I need?</strong><br>
+The prompts are written for Claude and also work with other capable AI chat assistants. A free plan is enough to start, though paid plans handle longer inputs more comfortably. [VERIFY CURRENT INFORMATION on plan limits before publishing.]</p>
+
+<p><strong>Do I need Microsoft Excel?</strong><br>
+No. The spreadsheet also works in Google Sheets, which is free.</p>
+
+<p><strong>Is this suitable for a business that hasn't started yet?</strong><br>
+Yes. The Business Idea Validator helps you test an idea with small, low-cost experiments before you invest more money.</p>
+
+<p><strong>Will this guarantee more customers or revenue?</strong><br>
+No product can honestly promise that. This system helps you make clearer decisions, spend your time on the right priorities and communicate your offer better. Results depend on your business, your market and how you apply it.</p>
+
+<p><strong>Does it include legal or tax advice?</strong><br>
+No. Where topics like GST, refund terms or regulations come up, the system flags them and recommends checking with a qualified professional.</p>
+
+<p><strong>Are the example businesses real?</strong><br>
+No. All examples are fictional and shown for illustration only. They are not customer results.</p>
+
+<p><strong>How do I receive the product?</strong><br>
+Right after purchase, you'll get a download link on the order page and by email.</p>
+
+<h2>Start building your strategy today</h2>
+<p>Know your customer. Build an offer worth buying. Plan the next 90 days with confidence.</p>
+<p><strong>Click "Add to Cart" to get instant access.</strong></p>
+
+<p><small>AQVANI.SHOP — Practical Digital Tools for Modern Work. This product provides general business guidance and is not legal, tax or financial advice. Please review all AI-generated content before using it in your business.</small></p>
+
+---------------------------------------------------------------------
+4. SEO (Yoast / Rank Math fields)
+---------------------------------------------------------------------
+SEO title (≤60 chars):
+AI Business Strategy System 2026 | Workbook & Templates
+
+Meta description (≤155 chars):
+Build a clear business strategy with AI: 23 tools, 40 prompts, worksheets, persona spreadsheet, offer builder and a 90-day roadmap. Instant download.
+
+URL slug:
+ai-business-strategy-system
+
+Focus keyphrase:
+AI business strategy
+
+---------------------------------------------------------------------
+5. PRODUCT TAGS
+---------------------------------------------------------------------
+AI business tools, business strategy, small business, AI prompts, Claude prompts, business planning, customer persona, pricing strategy, offer builder, 90-day plan, freelancer tools, consultant tools, digital download
+
+Product category suggestion: Business Systems / AI Toolkits
+
+---------------------------------------------------------------------
+6. PRODUCT IMAGE ALT TEXT
+---------------------------------------------------------------------
+AI Business Strategy System by Aqvani.shop — workbook, templates, persona spreadsheet, offer builder and 90-day roadmap
+
+=====================================================================
+NOTES FOR THE SELLER (do not publish)
+=====================================================================
+- Price: set your own. The earlier pricing hypothesis (₹2,999–₹3,999)
+  was for the FULL 9-system product. This listing is System 01 only.
+- Before publishing, render the PDFs (currently Markdown masters) and
+  upload all 5 files as the WooCommerce downloadable files.
+- Do NOT add "500+ prompts", "50+ SOPs", "1,000 content ideas" or
+  similar until those modules are built and counted.
+- Check the AI plan-limits FAQ line and remove the [VERIFY] tag.
